@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Shoubin Yu"
+title: "Hasnat Md Abdullah"
 excerpt: ""
 author_profile: true
 redirect_from: 
@@ -15,7 +15,8 @@ redirect_from:
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
-<span class='anchor' id='about-me'></span>
+# Howdy
+<!-- <span class='anchor' id='about-me'></span>
 
 Hi, thanks for stopping by! I am now a third-year Ph.D. Student at [The University of North Carolina at Chapel Hill](https://www.unc.edu/), advised by [Prof. Mohit Bansal](https://www.cs.unc.edu/~mbansal/). Previously, I did my undergraduate study at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/). 
 
@@ -262,4 +263,4 @@ Bo Wu, **Shoubin Yu**, Zhenfang Chen, Joshua B. Tenenbaum, Chuang Gan
 
 <div style="display: none;">
     <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=8VTPTlKP4lJplkK2W5lW_-YLGoIzrMYY0zH3jZOw2ec&cl=ffffff&w=a"></script>
-</div>
+</div> -->
