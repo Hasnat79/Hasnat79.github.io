@@ -16,8 +16,8 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-<!-- fja;sldkf;adslkfja;sdl
-Hi, thanks for stopping by! I am now a third-year Ph.D. Student at [The University of North Carolina at Chapel Hill](https://www.unc.edu/), advised by [Prof. Mohit Bansal](https://www.cs.unc.edu/~mbansal/). Previously, I did my undergraduate study at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/). 
+
+<!-- Hi, thanks for stopping by! I am now a third-year Ph.D. Student at [The University of North Carolina at Chapel Hill](https://www.unc.edu/), advised by [Prof. Mohit Bansal](https://www.cs.unc.edu/~mbansal/). Previously, I did my undergraduate study at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/). 
 
 I also work at Amazon (2023) / Adobe Research (2024) / Google Deepmind (2025). 
 
@@ -31,7 +31,7 @@ I develop and enhance models/systems capable of effectively and efficiently perc
 
 - **Efficient Video Representation / Feature Engineering**: [LLoVi](https://arxiv.org/abs/2312.17235)(EMNLP24), [VideoTree](https://arxiv.org/abs/2405.19209) (CVPR25), [MoPRL](https://arxiv.org/abs/2112.03649) (TCSVT23)
 
-Find me here: shoubin -atsign- cs . unc . edu -->
+Find me here: shoubin -atsign- cs . unc . edu --> -->
 
 # 🔥 News
 <!-- - *2025.03*: 🥦 VEGGIE is on arXiv.
@@ -73,12 +73,12 @@ Jialu Li\*, **Shoubin Yu\***,  Han Lin\*, Jaemin Cho, Jaehong Yoon, Mohit Bansal
 **Shoubin Yu\***, Difan Liu\*, Ziqiao Ma\*, Yicong Hong, Yang Zhou, Hao Tan, Joyce Chai, Mohit Bansal
 
 [**Code**](https://github.com/Yui010206/VEGGIE-VidEdit) | [**Project Page**](https://veggie-gen.github.io/)
-- We propose VEGGIE, a unified and versatile video generative model that handles various tasks for both video concept grounding and editing according to user instructions. -->
+- We propose VEGGIE, a unified and versatile video generative model that handles various tasks for both video concept grounding and editing according to user instructions.
 </div>
 </div>
 
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/raccoon.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/raccoon.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [RACCooN: Remove, Add, and Change Video Content with Auto-Generated Narratives](https://arxiv.org/pdf/2405.18406)
@@ -86,9 +86,9 @@ Jialu Li\*, **Shoubin Yu\***,  Han Lin\*, Jaemin Cho, Jaehong Yoon, Mohit Bansal
 Jaehong Yoon\*, **Shoubin Yu\***, Mohit Bansal
 
 [**Code**](https://github.com/jaehong31/raccoon) | [**Project Page**](https://raccoon-mllm-gen.github.io/)
-- We present RACCooN, a versatile and user-friendly video-to-paragraph-to-video framework, enables users to remove, add, or change video content via updating auto-generated narratives. -->
+- We present RACCooN, a versatile and user-friendly video-to-paragraph-to-video framework, enables users to remove, add, or change video content via updating auto-generated narratives.
 </div>
-</div>
+</div> -->
 
 
 
@@ -255,8 +255,8 @@ Bo Wu, **Shoubin Yu**, Zhenfang Chen, Joshua B. Tenenbaum, Chuang Gan
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/amazon.png' alt="sym" width="55%"></div></div>
 <div class='paper-box-text' markdown="1">
 - *2023.05 - 2023.11*, Research Scientist Intern
-</div> -->
 </div>
+</div> -->
 
 
 
