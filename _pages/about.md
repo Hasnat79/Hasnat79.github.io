@@ -16,7 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-fja;sldkf;adslkfja;sdl
+<!-- fja;sldkf;adslkfja;sdl
 Hi, thanks for stopping by! I am now a third-year Ph.D. Student at [The University of North Carolina at Chapel Hill](https://www.unc.edu/), advised by [Prof. Mohit Bansal](https://www.cs.unc.edu/~mbansal/). Previously, I did my undergraduate study at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/). 
 
 I also work at Amazon (2023) / Adobe Research (2024) / Google Deepmind (2025). 
@@ -31,10 +31,10 @@ I develop and enhance models/systems capable of effectively and efficiently perc
 
 - **Efficient Video Representation / Feature Engineering**: [LLoVi](https://arxiv.org/abs/2312.17235)(EMNLP24), [VideoTree](https://arxiv.org/abs/2405.19209) (CVPR25), [MoPRL](https://arxiv.org/abs/2112.03649) (TCSVT23)
 
-Find me here: shoubin -atsign- cs . unc . edu
+Find me here: shoubin -atsign- cs . unc . edu -->
 
 # 🔥 News
-- *2025.03*: 🥦 VEGGIE is on arXiv.
+<!-- - *2025.03*: 🥦 VEGGIE is on arXiv.
 - *2025.02*: 💬 Gave an invited talk at **Twelve Labs**.
 - *2025.02*: 👀 2 papers accepted to **CVPR 2025**. Check VideoTree for dynamic/adaptive keyframe selection with LLM, GroundMoRe for a new motion-grounded video reasoning task.
 - *2025.02*: 🧠 Will summer intern at **Google Deepmind**.
@@ -48,12 +48,12 @@ Find me here: shoubin -atsign- cs . unc . edu
 - *2023.05*: 🌞 Summer intern at **Amazon**.
 - *2022.09*: ⛪️ Join <a href="https://murgelab.cs.unc.edu/index.html"> **UNC-CH** MURGe-Lab </a>.
 - *2022.06*: 🎓 Graduate from **Shanghai Jiao Tong University** (outstanding graduates).
-- *2021.10*: 🌟 1 paper accepted to **NeurIPS 2021**. Check STAR for real-world situated reasoning.
+- *2021.10*: 🌟 1 paper accepted to **NeurIPS 2021**. Check STAR for real-world situated reasoning. -->
 
 # 📝 Pre-print (*: equal contribution/co-first author)
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/video-msg.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/video-msg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Training-free Guidance in Text-to-Video Generation via Multimodal Planning and Structured Noise Initialization](https://arxiv.org/abs/2504.08641)
@@ -73,12 +73,12 @@ Jialu Li\*, **Shoubin Yu\***,  Han Lin\*, Jaemin Cho, Jaehong Yoon, Mohit Bansal
 **Shoubin Yu\***, Difan Liu\*, Ziqiao Ma\*, Yicong Hong, Yang Zhou, Hao Tan, Joyce Chai, Mohit Bansal
 
 [**Code**](https://github.com/Yui010206/VEGGIE-VidEdit) | [**Project Page**](https://veggie-gen.github.io/)
-- We propose VEGGIE, a unified and versatile video generative model that handles various tasks for both video concept grounding and editing according to user instructions.
+- We propose VEGGIE, a unified and versatile video generative model that handles various tasks for both video concept grounding and editing according to user instructions. -->
 </div>
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/raccoon.jpg' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/raccoon.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [RACCooN: Remove, Add, and Change Video Content with Auto-Generated Narratives](https://arxiv.org/pdf/2405.18406)
@@ -86,14 +86,14 @@ Jialu Li\*, **Shoubin Yu\***,  Han Lin\*, Jaemin Cho, Jaehong Yoon, Mohit Bansal
 Jaehong Yoon\*, **Shoubin Yu\***, Mohit Bansal
 
 [**Code**](https://github.com/jaehong31/raccoon) | [**Project Page**](https://raccoon-mllm-gen.github.io/)
-- We present RACCooN, a versatile and user-friendly video-to-paragraph-to-video framework, enables users to remove, add, or change video content via updating auto-generated narratives.
+- We present RACCooN, a versatile and user-friendly video-to-paragraph-to-video framework, enables users to remove, add, or change video content via updating auto-generated narratives. -->
 </div>
 </div>
 
 
 
 # 📝 Publications 
-
+<!-- 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/groundmore.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -214,38 +214,38 @@ Bo Wu, **Shoubin Yu**, Zhenfang Chen, Joshua B. Tenenbaum, Chuang Gan
 [**Code**](https://github.com/csbobby/STAR_Benchmark) | [**Project Page**](http://star.csail.mit.edu)
 - We propose STAR, a benchmark for neural-symbolic video reasoning in real-world scenes.
 </div>
-</div>
+</div> -->
 
 # 🎖 Honors and Awards
-- Piepie‘s (1-year-old black Shiba-Inu 🐶) Dad, 2024 
+<!-- - Piepie‘s (1-year-old black Shiba-Inu 🐶) Dad, 2024 
 - The Hui-Chun Chin and Tsung Dao Lee Scholar, 2020
 - Meritorious Award in Mathematical Contest in Modeling, 2019
-- Second Prize in Shanghai, China Undergraduate Mathematical Contest in Modeling, 2019
+- Second Prize in Shanghai, China Undergraduate Mathematical Contest in Modeling, 2019 -->
 
 # 🧐 Service
-- Conference reviewer: CVPR, ECCV, NeurIPS, ICLR, ICML, AISTATS, ARR (ACL, EMNLP, CoNLL, NACCAL, EACL), AAAI 
-- Journal reviewer: IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), IEEE Transactions on Neural Networks and Learning Systems (TNNLS), IEEE Transactions on Multimedia (TMM)
+<!-- - Conference reviewer: CVPR, ECCV, NeurIPS, ICLR, ICML, AISTATS, ARR (ACL, EMNLP, CoNLL, NACCAL, EACL), AAAI 
+- Journal reviewer: IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), IEEE Transactions on Neural Networks and Learning Systems (TNNLS), IEEE Transactions on Multimedia (TMM) -->
 
 # 📖 Educations
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/unc_logo.png' alt="sym" width="35%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/unc_logo.png' alt="sym" width="35%"></div></div>
 <div class='paper-box-text' markdown="1">
 - *2022.09 - Present*
 - The University of North Carolina at Chapel Hill 
 - Computer Science, Ph.D.
 </div>
-</div>
+</div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/sjtu_logo.png' alt="sym" width="35%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/sjtu_logo.png' alt="sym" width="35%"></div></div>
 <div class='paper-box-text' markdown="1">
 - *2017.09 - 2022.06*
 - Shanghai Jiao Tong University 
 - Information Security, B.Eng.
 </div>
-</div>
+</div> -->
 
 
 # 💻 Internships
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/adobe.png' alt="sym" width="55%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/adobe.png' alt="sym" width="55%"></div></div>
 <div class='paper-box-text' markdown="1">
 - *2024.05 - 2025.03*, Research Scientist Intern
 </div>
@@ -255,7 +255,7 @@ Bo Wu, **Shoubin Yu**, Zhenfang Chen, Joshua B. Tenenbaum, Chuang Gan
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/amazon.png' alt="sym" width="55%"></div></div>
 <div class='paper-box-text' markdown="1">
 - *2023.05 - 2023.11*, Research Scientist Intern
-</div>
+</div> -->
 </div>
 
 
