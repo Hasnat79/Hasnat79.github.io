@@ -31,7 +31,7 @@ I develop and enhance models/systems capable of effectively and efficiently perc
 
 - **Efficient Video Representation / Feature Engineering**: [LLoVi](https://arxiv.org/abs/2312.17235)(EMNLP24), [VideoTree](https://arxiv.org/abs/2405.19209) (CVPR25), [MoPRL](https://arxiv.org/abs/2112.03649) (TCSVT23)
 
-Find me here: shoubin -atsign- cs . unc . edu --> -->
+Find me here: shoubin -atsign- cs . unc . edu --> 
 
 # 🔥 News
 <!-- - *2025.03*: 🥦 VEGGIE is on arXiv.
