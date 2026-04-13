@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Hasnat Md Abdullah"
-description              : "Ph.D. Student at Texas A&M University"
+title                    : "Hasnat Md. Abdullah"
+description              : "Ph.D. Student in Animal Sciences, University of Illinois Urbana-Champaign"
 repository               : "Hasnat79/Hasnat79.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -21,15 +21,15 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Hasnat Md Abdullah"
+  name             : "Hasnat Md. Abdullah"
   avatar           : "images/curt.jpg"
-  bio              : "Texas A&M University, College Station"
-  location         : " Texas, US"
+  bio              : "Ph.D. Student, Animal Sciences<br>University of Illinois Urbana-Champaign"
+  location         : "Urbana, IL, USA"
   employer         :
-  pubmed           : 
+  pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=jFgmL9wAAAAJ&hl=en"
-  email            : 
-  researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
+  email            : "hasnatabdullah79@gmail.com"
+  researchgate     :
   uri              :
   bitbucket        :
   codepen          :
@@ -41,17 +41,17 @@ author:
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      :
   lastfm           :
-  linkedin         : # e.g., "linkedin username"
-  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : # e.g., "https://orcid.org/xxxx"
+  linkedin         :
+  dblp             :
+  orcid            :
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    :
   steam            :
   tumblr           :
-  twitter          : #"shoubin621"
+  twitter          :
   vine             :
   weibo            :
   xing             :
@@ -136,7 +136,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Chicago # Updated to reflect Urbana, IL
 
 
 # Plugins

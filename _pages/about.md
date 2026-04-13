@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hasnat Md Abdullah"
+title: "Hasnat Md. Abdullah"
 excerpt: ""
 author_profile: true
 redirect_from: 
@@ -17,248 +17,239 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-<!-- Hi, thanks for stopping by! I am now a third-year Ph.D. Student at [The University of North Carolina at Chapel Hill](https://www.unc.edu/), advised by [Prof. Mohit Bansal](https://www.cs.unc.edu/~mbansal/). Previously, I did my undergraduate study at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/). 
+I am a Ph.D. student in **Animal Sciences** at the [University of Illinois Urbana-Champaign](https://illinois.edu/), advised by [Dr. Tiago Bresolin](https://animalsciences.illinois.edu/). I hold a Master's degree in Computer Science from [Texas A&M University](https://www.tamu.edu/), where I was advised by [Dr. Ruihong Huang](https://people.engr.tamu.edu/huangrh/index.html).
 
-I also work at Amazon (2023) / Adobe Research (2024) / Google Deepmind (2025). 
+My research bridges **AI and livestock genomics** — integrating SNP genotypes with 3D computer vision to build scalable deep-learning tools that transform raw imagery into precise efficiency traits. I aim to replace manual measurements with high-throughput, automated phenotyping for next-generation livestock breeding.
 
-My research focuses on multimodal AI, with a particular emphasis on video-centric AI modeling. 
+Previously, I interned at [AIISC Lab, University of South Carolina](https://aiisc.ai/), working with [Dr. Amit Sheth](https://amit.aiisc.ai/) and [Dr. Amitava Das](https://amitavadas.com/) on encoder-free Vision Language Models and compact enterprise SLMs. I have also collaborated on disaster impact prediction and building/road damage assessment via aerial imagery.
 
-I develop and enhance models/systems capable of effectively and efficiently perceiving and inferring from the dynamic and diverse visual world.  My work aims to enable AI to assist humans in understanding complex video content for advanced reasoning and manipulation, contributing to a broad spectrum of downstream applications (sports, security, medical, and educational domains), and fostering the development of more adaptable and intelligent video-based AI systems. They are: 
+My broader research interests include **multimodal AI**, **NLP**, **continual learning**, **AI alignment**, and **computer vision for real-world applications**.
 
-- **Video Reasoning Benchmarks/Methods**: [SeViLA](https://arxiv.org/abs/2305.06988) (NeurIPS23), [CREMA](https://arxiv.org/abs/2402.05889) (ICLR25), [GroundMoRe](https://arxiv.org/abs/2411.09921) (CVPR25), [STAR](https://arxiv.org/abs/2405.09711) (NeurIPS21)
-
-- **Faithful Video Editing/Generative Methods**: [VEGGIE](https://arxiv.org/abs/2503.14350) (ArXiv25), [SAFREE](https://arxiv.org/abs/2410.12761) (ICLR25), [RACCooN](https://arxiv.org/abs/2405.18406) (ArXiv24)
-
-- **Efficient Video Representation / Feature Engineering**: [LLoVi](https://arxiv.org/abs/2312.17235)(EMNLP24), [VideoTree](https://arxiv.org/abs/2405.19209) (CVPR25), [MoPRL](https://arxiv.org/abs/2112.03649) (TCSVT23)
-
-Find me here: shoubin -atsign- cs . unc . edu --> 
+---
 
 # 🔥 News
-<!-- - *2025.03*: 🥦 VEGGIE is on arXiv.
-- *2025.02*: 💬 Gave an invited talk at **Twelve Labs**.
-- *2025.02*: 👀 2 papers accepted to **CVPR 2025**. Check VideoTree for dynamic/adaptive keyframe selection with LLM, GroundMoRe for a new motion-grounded video reasoning task.
-- *2025.02*: 🧠 Will summer intern at **Google Deepmind**.
-- *2025.01*: 🇸🇬 3 papers accepted to **ICLR 2025**. Check ☕CREMA for video+any modality reasoning, SAFREE for training-free safe visual generation, and ⛓️SRDF for human-level VL-Navigation.
-- *2024.09*: 📓 1 paper accepted to **EMNLP 2024**. Check LLoVi for long VideoQA with LLM.
-- *2024.07*: 📹 1 paper accepted to **ACMMM 2024**. Check IVA-0 for controllable image animation.
-- *2024.06*: 💬 Gave an invited talk at **Google**.
-- *2024.05*: 🎬 Summer intern at **Adobe**.
-- *2023.09*: ⛓️ 1 paper accepted to **NeurIPS 2023**. Check SeViLA for Video Loc+QA.
-- *2023.07*: 🦴 1 paper accepted to **IEEE TCSVT**. Check MoPRL for skeletal anomaly detection.
-- *2023.05*: 🌞 Summer intern at **Amazon**.
-- *2022.09*: ⛪️ Join <a href="https://murgelab.cs.unc.edu/index.html"> **UNC-CH** MURGe-Lab </a>.
-- *2022.06*: 🎓 Graduate from **Shanghai Jiao Tong University** (outstanding graduates).
-- *2021.10*: 🌟 1 paper accepted to **NeurIPS 2021**. Check STAR for real-world situated reasoning. -->
 
-# 📝 Pre-print (*: equal contribution/co-first author)
+- *2026.03*: 🏆 **Second Place Winner**, Smart Livestock Track, Precision & Digital Agriculture Hackathon, UIUC Center for Digital Agriculture.
+- *2026.03*: 🎤 Poster Presentation at **EACL 2026** — *GRAS: Measuring Bias in VLMs*.
+- *2026.01*: 🎤 Oral Presentation at **AAAI-26 Special Track on AI Alignment** — *DETONATE*.
+- *2025.08*: 🎤 Spotlight at **KDD'25 RelKD Workshop** — *InstaLearn*.
+- *2025.08*: 🎓 Started **Ph.D. in Animal Sciences** at University of Illinois Urbana-Champaign.
+- *2025.07*: 🏅 **Outstanding Paper Award** at ACL 2025 NLP4PI Workshop — *CliME*.
+- *2025.07*: 🎤 Oral Presentation at **ACL 2025 NLP4PI Workshop** — *CliME*.
+- *2025.05*: 🎓 Completed **M.S. in Computer Science** at Texas A&M University.
+- *2025.05*: 🔬 Started internship at **AIISC Lab, University of South Carolina**.
+- *2025.02*: 🎤 Poster Presentation at **WACV 2025** — *UALBench*.
 
+---
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/video-msg.png' alt="sym" width="100%"></div></div>
+# 📝 Publications
+
 <div class='paper-box-text' markdown="1">
 
-[Training-free Guidance in Text-to-Video Generation via Multimodal Planning and Structured Noise Initialization](https://arxiv.org/abs/2504.08641)
+**DETONATE: A Benchmark for Text-to-Image Alignment and Kernelized Direct Preference Optimization**
 
-Jialu Li\*, **Shoubin Yu\***,  Han Lin\*, Jaemin Cho, Jaehong Yoon, Mohit Bansal
+**Hasnat Md. Abdullah** et al.
 
-[**Code**](https://github.com/jialuli-luka/Video-MSG) | [**Project Page**](https://video-msg.github.io/)
-- We propose Video-MSG, a training-free guidance method for T2V generation with multimodal planning and structured noise.
+*AAAI-26 Special Track on AI Alignment, 2026* · **First Author** · [Oral Presentation]
+
 </div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/veggie.png' alt="sym" width="100%"></div></div>
+---
+
 <div class='paper-box-text' markdown="1">
 
-[VEGGIE: Instructional Editing and Reasoning of Video Concepts with Grounded Generation](https://arxiv.org/abs/2503.14350)
+**Ask Me Again Differently: GRAS for Measuring Bias in VLMs on Gender, Race, Age, and Skin Tone**
 
-**Shoubin Yu\***, Difan Liu\*, Ziqiao Ma\*, Yicong Hong, Yang Zhou, Hao Tan, Joyce Chai, Mohit Bansal
+Co-author.
 
-[**Code**](https://github.com/Yui010206/VEGGIE-VidEdit) | [**Project Page**](https://veggie-gen.github.io/)
-- We propose VEGGIE, a unified and versatile video generative model that handles various tasks for both video concept grounding and editing according to user instructions.
+*EACL 2026* · [Poster Presentation]
+
 </div>
-</div>
 
+---
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/raccoon.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[RACCooN: Remove, Add, and Change Video Content with Auto-Generated Narratives](https://arxiv.org/pdf/2405.18406)
+**CliME: Evaluating Multimodal Climate Discourse on Social Media and the Climate Alignment Quotient**
 
-Jaehong Yoon\*, **Shoubin Yu\***, Mohit Bansal
+**Hasnat Md. Abdullah** et al.
 
-[**Code**](https://github.com/jaehong31/raccoon) | [**Project Page**](https://raccoon-mllm-gen.github.io/)
-- We present RACCooN, a versatile and user-friendly video-to-paragraph-to-video framework, enables users to remove, add, or change video content via updating auto-generated narratives.
+*ACL 2025 — NLP for Positive Impact (NLP4PI) Workshop* · **First Author** · 🏅 **Outstanding Paper Award**
+
 </div>
-</div> -->
 
+---
 
-
-# 📝 Publications 
-<!-- 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/groundmore.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Motion-Grounded Video Reasoning: Understanding and Perceiving Motion at Pixel Level](https://arxiv.org/abs/2411.09921)
+**InstaLearn: Continual Knowledge Updates for Domain Adaptation**
 
-Andong Deng, Tongjia Chen, **Shoubin Yu**, Taojiannan Yang, Lincoln Spencer, Yapeng Tian, Ajmal Saeed Mian, Mohit Bansal, Chen Chen
+**Hasnat Md. Abdullah** et al.
 
-[**Code**](https://github.com/dengandong/GroundMoRe) | [**Project Page**](https://groundmore.github.io/)
-- We present GroundMoRe, a new benchmark for novel Motion-Grounded Video Reasoning, designed to assess multimodal models' reasoning and perception capabilities for motion understanding. 
+*KDD'25 — RelKD Workshop* · **First Author** · [Spotlight Presentation]
+
 </div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/videotree.jpg' alt="sym" width="100%"></div></div>
+---
+
 <div class='paper-box-text' markdown="1">
 
-[VideoTree: Adaptive Tree-based Video Representation for LLM Reasoning on Long Videos](https://arxiv.org/pdf/2405.19209)
+**Alignment Quality Index (AQI)**
 
-Ziyang Wang\*, **Shoubin Yu\***, Elias Stengel-Eskin\*, Jaehong Yoon, Feng Cheng, Gedas Bertasius, Mohit Bansal
+Co-author.
 
-[**Code**](https://github.com/Ziyang412/VideoTree) | [**Project Page**](https://videotree2024.github.io/)
-- We present VideoTree, an adaptive tree-based video presentation/prompting with simple visual clustering for long video reasoning with LLM. 
+*EMNLP 2025 Main Conference*
+
 </div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/safree.png' alt="sym" width="100%"></div></div>
+---
+
 <div class='paper-box-text' markdown="1">
 
-[SAFREE: Train-free And Adaptive Guard For Safe Text-to-Image And Video Generation](https://arxiv.org/abs/2410.12761)
+**Mitigating Gender Bias via Fostering Exploratory Thinking in LLMs**
 
-Jaehong Yoon\*, **Shoubin Yu\***, Vaidehi Patil, Huaxiu Yao,  Mohit Bansal
+Co-author.
 
-[**Code**](https://github.com/jaehong31/SAFREE) | [**Project Page**](https://safree-safe-t2i-t2v.github.io/)
-- We propose SAFREE, a concept guard that can zero transfer to any visual diffusion models for safe generation. 
+*EMNLP 2025 Findings*
+
 </div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/crema.jpg' alt="sym" width="100%"></div></div>
+---
+
 <div class='paper-box-text' markdown="1">
 
-[CREMA: Generalizable and Efficient Video-Language Reasoning via Multimodal Modular Fusion](https://arxiv.org/pdf/2402.05889.pdf)
+**UALBench: The First Comprehensive Unusual Activity Localization Benchmark**
 
-**Shoubin Yu\***, Jaehong Yoon\*, Mohit Bansal
+**Hasnat Md. Abdullah** et al.
 
-[**Code**](https://github.com/Yui010206/CREMA) | [**Project Page**](https://crema-videollm.github.io/)
-- We present CREMA, an efficient & modular modality-fusion framework for injecting any new modality into video reasoning.
+*WACV 2025* · **First Author** · [Poster Presentation]
+
 </div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/scalevln2.png' alt="sym" width="100%"></div></div>
+---
+
 <div class='paper-box-text' markdown="1">
 
-[Bootstrapping Language-guided Navigation Learning with Self-refining Data Flywheel](https://arxiv.org/abs/2412.08467)
+**Non-Uniform Spatial Alignment Errors in sUAS Imagery From Wide-Area Disasters**
 
-Zun Wang, Jialu Li, Yicong Hong, Songze Li, Kunchang Li, **Shoubin Yu**, Yi Wang, Yu Qiao, Yali Wang, Mohit Bansal, Limin Wang
+Co-author.
 
-[**Code**](https://github.com/wz0919/VLN-SRDF)
-- We present a Self-Refining Data Flywheel strategy for VLN, surpassing/approaching human performance on several benchmarks.  
+*IEEE RO-MAN 2025 — 34th IEEE International Conference on Robot and Human Interactive Communication*
+
 </div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2024</div><img src='images/llovi.jpg' alt="sym" width="100%"></div></div>
+---
+
 <div class='paper-box-text' markdown="1">
 
-[A Simple LLM Framework for Long-Range Video Question-Answering](https://arxiv.org/pdf/2312.17235.pdf)
+**Visual Counter Turing Test (VCT²)**
 
-Ce Zhang, Taixi Lu, Md Mohaiminul Islam, Ziyang Wang, **Shoubin Yu**, Mohit Bansal, Gedas Bertasius
+Co-author.
 
-[**Code**](https://github.com/CeeZh/LLoVi) 
-- We present LLoVi, a simple yet effective framework with LLM for long-range video question-answering.
+*IJCNLP-AACL 2025*
+
 </div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2024</div><img src='images/iva0.jpg' alt="sym" width="100%"></div></div>
+---
+
 <div class='paper-box-text' markdown="1">
 
-[Zero-Shot Controllable Image-to-Video Animation via Motion Decomposition](https://www.amazon.science/publications/zero-shot-controllable-image-to-video-animation-via-motion-decomposition)
+**Affective Social Anthropomorphic Intelligent System**
 
-**Shoubin Yu**, Jacob Zhiyuan Fang, Skyler Zheng, Gunnar Sigurdsson, Vicente Ordonez, Robinson Piramuthu, Mohit Bansal
+Co-author.
 
-[**Code**](https://github.com/Yui010206/IVA-0) | [**Homepage**](https://img2vidanim-0.github.io/)
-- We present IVA-0, a Image-to-Video animator, enables precise control from users through in-place and out-of-place motion decomposition.
+*Multimedia Tools and Applications, Springer Nature, 2023 (Q1 Journal)*
+
 </div>
-</div>
 
+---
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023</div><img src='images/sevila.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Self-Chained Image-Language Model for Video Localization and Question Answering](https://arxiv.org/pdf/2305.06988.pdf)
+**SynthEnsemble: A Fusion of CNN, Vision Transformer, and Hybrid Models for Chest X-Ray Classification**
 
-**Shoubin Yu**, Jaemin Cho, Prateek Yadav, Mohit Bansal
+Co-author.
 
-[**Code**](https://github.com/Yui010206/SeViLA/) | [**Demo**](https://huggingface.co/spaces/SeViLA/SeViLA) | [**Talk**](https://www.youtube.com/watch?v=AIdXfZlFGS0)
-- We propose SeViLA, which self-chained BLIP-2 for 2-stage video question-answering (localization + QA) & refine localization with QA feedback.
+*IEEE IICAIET 2022*
+
 </div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TCSVT 2023</div><img src='images/moprl.jpg' alt="sym" width="100%"></div></div>
+---
+
 <div class='paper-box-text' markdown="1">
 
-[Regularity Learning via Explicit Distribution Modeling for Skeletal Video Anomaly Detection](https://ieeexplore.ieee.org/document/10185076)
+**A Comparative Analysis of Lumpy Skin Disease Prediction through ML Approaches**
 
-**Shoubin Yu**, Zhongyin Zhao, Haoshu Fang, Andong Deng, Haisheng Su, Dongliang Wang, Weihao Gan, Cewu Lu, Wei Wu
+Co-author.
 
-[**Code**](https://github.com/Yui010206/MoPRL)
-- We propose MoPRL, a transformer-based model incorporated with skeletal motion prior for efficient video anomaly detection.
+*IEEE IICAIET 2022*
+
 </div>
-</div>
 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2021</div><img src='images/star.jpg' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[STAR: A Benchmark for Situated Reasoning in Real-World Videos](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/5ef059938ba799aaa845e1c2e8a762bd-Abstract-round2.html)
-
-Bo Wu, **Shoubin Yu**, Zhenfang Chen, Joshua B. Tenenbaum, Chuang Gan
-
-[**Code**](https://github.com/csbobby/STAR_Benchmark) | [**Project Page**](http://star.csail.mit.edu)
-- We propose STAR, a benchmark for neural-symbolic video reasoning in real-world scenes.
-</div>
-</div> -->
+---
 
 # 🎖 Honors and Awards
-<!-- - Piepie‘s (1-year-old black Shiba-Inu 🐶) Dad, 2024 
-- The Hui-Chun Chin and Tsung Dao Lee Scholar, 2020
-- Meritorious Award in Mathematical Contest in Modeling, 2019
-- Second Prize in Shanghai, China Undergraduate Mathematical Contest in Modeling, 2019 -->
 
-# 🧐 Service
-<!-- - Conference reviewer: CVPR, ECCV, NeurIPS, ICLR, ICML, AISTATS, ARR (ACL, EMNLP, CoNLL, NACCAL, EACL), AAAI 
-- Journal reviewer: IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), IEEE Transactions on Neural Networks and Learning Systems (TNNLS), IEEE Transactions on Multimedia (TMM) -->
+- **Second Place Winner**, Smart Livestock Track, Precision & Digital Agriculture Hackathon, UIUC Center for Digital Agriculture *(2026)*
+- **Beef Quality Assurance (BQA)** Cow-Calf Certification (ID: IL25-00610143)
+- **Outstanding Paper Award**, 4th Workshop on NLP for Positive Impact, ACL 2025
+- **Travel Grant** ($1,000), Dept. of CSE, Texas A&M University — for WACV 2025
+- **Quality Journal Publication Award**, BRAC University — *Multimedia Tools and Applications* (Q1, 2023)
+- **Top 120 Startup Finalist**, Student to Startup Program (Chapter 1), IDEA, Bangladesh *(2019)*
+- **Merit-Based Full Scholarship** (100%), Master's Program, BRAC University
+- **Vice Chancellor's List**, BRAC University: Spring 2018, Summer 2018, Fall 2019, Summer 2020
+- **Dean's List**, BRAC University: Fall 2017
+- **Merit-Based Scholarship** (70%), Undergraduate Program, BRAC University
+- **Government Scholarship**, Higher Secondary Certificate (HSC): 4-year stipend
+- **Government Scholarship**, Secondary School Certificate (SSC): 2-year stipend
 
-# 📖 Educations
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/unc_logo.png' alt="sym" width="35%"></div></div>
-<div class='paper-box-text' markdown="1">
-- *2022.09 - Present*
-- The University of North Carolina at Chapel Hill 
-- Computer Science, Ph.D.
-</div>
-</div> -->
+---
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/sjtu_logo.png' alt="sym" width="35%"></div></div>
-<div class='paper-box-text' markdown="1">
-- *2017.09 - 2022.06*
-- Shanghai Jiao Tong University 
-- Information Security, B.Eng.
-</div>
-</div> -->
+# 📖 Education
 
+- *2025.08 – Present* · **Ph.D. in Animal Sciences** · University of Illinois Urbana-Champaign
+  - Supervisor: Dr. Tiago Bresolin
+  - Coursework: Beef Production, Genomics for Beginners, AI for Precision Management
 
-# 💻 Internships
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/adobe.png' alt="sym" width="55%"></div></div>
-<div class='paper-box-text' markdown="1">
-- *2024.05 - 2025.03*, Research Scientist Intern
-</div>
-</div>
+- *2023.01 – 2025* · **M.S. in Computer Science** · Texas A&M University
+  - Supervisor: Dr. Ruihong Huang
+  - Coursework: Generative AI, NLP for Science, Human-AI Interaction, Deep Learning, Machine Learning, Artificial Intelligence
 
+- *2017.01 – 2020.12* · **B.Sc. in Computer Science** · BRAC University, Dhaka
+  - In-major CGPA: 3.87
+  - Coursework: NLP, Digital Signal Processing, Neural Networks, Artificial Intelligence, Numerical Methods, Stochastic Processes
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/amazon.png' alt="sym" width="55%"></div></div>
-<div class='paper-box-text' markdown="1">
-- *2023.05 - 2023.11*, Research Scientist Intern
-</div>
-</div> -->
+---
 
+# 💼 Research & Work Experience
 
+- *2025.05 – 2025.07* · **Research Intern**, AIISC Lab, University of South Carolina *(Onsite)*
+  - Advisors: Dr. Amit Sheth, Dr. Amitava Das
+  - Topic: Encoder-free Vision Language Models; compact SLMs for enterprise solutions
+
+- *2025.01 – 2025.08* · **Research Collaborator**, IDRT
+  - PI: Dr. Jooho Kim
+  - Topic: Understanding physical structure of communities for improved disaster impact predictions
+
+- *2024.01 – 2025.08* · **Research Collaborator**, Humanitarian Robotics and AI Laboratory, Texas A&M
+  - PI: Prof. Robin Murphy
+  - Topic: Building and road damage assessment via CV/ML from georectified sUAS imagery
+
+- *2024.01 – 2025.05* · **Graduate Teaching Assistant**, Dept. of CSE, Texas A&M University
+  - Courses: Artificial Intelligence, Database Systems
+
+- *2023.01 – 2023.12* · **Graduate Research Assistant**, TAMU NLP Group
+
+- *2021.08 – 2022.12* · **Contractual Lecturer**, BRAC University
+  - Courses: Programming Language I, Algorithm Analysis & Design
+
+---
+
+# 🧐 Academic Service
+
+- **Reviewer**: NLP and multimodal AI venues
+
+---
 
 <div style="display: none;">
     <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=8VTPTlKP4lJplkK2W5lW_-YLGoIzrMYY0zH3jZOw2ec&cl=ffffff&w=a"></script>
