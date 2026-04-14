@@ -143,8 +143,98 @@
     font-weight: 500;
   }
 
+  /* RESUME BUTTON */
+  .resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--color-background-secondary);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border-primary);
+    border-radius: var(--border-radius-md);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    transition: background 0.15s;
+  }
+  .resume-btn:hover { background: var(--color-background-primary); }
+
+  /* CONTACT MODAL */
+  .contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #185FA5;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-md);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 2.5rem;
+    margin-left: 10px;
+    transition: background 0.15s;
+  }
+  .contact-btn:hover { background: #0F4A8A; }
+
+  /* SKILLS */
+  .skills-section { margin-bottom: 2.5rem; }
+  .skills-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .skill-tag {
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 99px;
+    border: 0.5px solid var(--color-border-secondary);
+    background: var(--color-background-primary);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+  .skill-tag.active {
+    background: var(--color-background-secondary);
+    color: var(--color-text-primary);
+    border-color: var(--color-border-primary);
+  }
+
+  /* PORTFOLIO */
+  .portfolio-section { margin-bottom: 2.5rem; }
+  .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+  .portfolio-card {
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: var(--border-radius-lg);
+    padding: 16px;
+    text-align: center;
+  }
+  .portfolio-title { font-size: 14px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 8px; }
+  .portfolio-desc { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 12px; }
+  .portfolio-links { display: flex; gap: 8px; justify-content: center; }
+  .portfolio-link {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #E6F1FB;
+    color: #185FA5;
+    text-decoration: none;
+  }
+
+  /* PUB LINK */
+  .pub-link {
+    font-size: 11px;
+    color: #185FA5;
+    text-decoration: none;
+    margin-left: 8px;
+  }
+  .pub-link:hover { text-decoration: underline; }
+
+  /* MOBILE ENHANCEMENTS */
   @media (max-width: 480px) {
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .timeline::before { left: 12px; }
+    .tl-dot { width: 24px; height: 24px; font-size: 11px; }
+    .tl-body { padding-top: 2px; }
+    .tl-title { font-size: 13px; }
+    .tl-sub { font-size: 11px; }
+    .portfolio-grid { grid-template-columns: 1fr; }
   }
 </style>
 
@@ -173,6 +263,31 @@
     </div>
   </div>
 
+  <!-- RESUME AND CONTACT -->
+  <div style="text-align: center;">
+    <a href="/assets/files/resume.pdf" download class="resume-btn">Download Resume</a>
+    <button class="contact-btn" onclick="openContactModal()">Contact Me</button>
+  </div>
+
+  <!-- SKILLS -->
+  <p class="section-label">Skills & Expertise</p>
+  <div class="skills-section">
+    <div class="skills-grid" id="skills">
+      <button class="skill-tag active" data-skill="all">All</button>
+      <button class="skill-tag" data-skill="nlp">NLP</button>
+      <button class="skill-tag" data-skill="cv">Computer Vision</button>
+      <button class="skill-tag" data-skill="ml">Machine Learning</button>
+      <button class="skill-tag" data-skill="python">Python</button>
+      <button class="skill-tag" data-skill="pytorch">PyTorch</button>
+      <button class="skill-tag" data-skill="js">JavaScript</button>
+      <!-- Add more skills as needed -->
+    </div>
+    <div id="skill-items" style="margin-top: 1rem;">
+      <!-- Placeholder: Add skill items here, e.g., projects or descriptions filtered by skill -->
+      <p>Skill items will be displayed here based on filter. Add divs with data-skills attribute.</p>
+    </div>
+  </div>
+
   <!-- TIMELINE -->
   <p class="section-label">Journey</p>
   <div class="timeline" id="timeline">
@@ -181,7 +296,7 @@
       <div class="tl-dot edu">🎓</div>
       <div class="tl-body">
         <div class="tl-date">2017 – 2020</div>
-        <div class="tl-title">B.Sc. Computer Science · BRAC University</div>
+        <div class="tl-title" title="Bachelor's degree in Computer Science from BRAC University with 3.87 CGPA, merit scholarship, and Vice Chancellor's List">B.Sc. Computer Science · BRAC University</div>
         <div class="tl-sub">In-major CGPA 3.87 · Merit scholarship · Vice Chancellor's List</div>
       </div>
     </div>
@@ -190,7 +305,7 @@
       <div class="tl-dot work">💼</div>
       <div class="tl-body">
         <div class="tl-date">2021 – 2022</div>
-        <div class="tl-title">Lecturer · BRAC University</div>
+        <div class="tl-title" title="Lecturer position at BRAC University teaching Programming Language I and Algorithm Analysis & Design">Lecturer · BRAC University</div>
         <div class="tl-sub">Programming Language I · Algorithm Analysis &amp; Design</div>
       </div>
     </div>
@@ -199,7 +314,7 @@
       <div class="tl-dot edu">🎓</div>
       <div class="tl-body">
         <div class="tl-date">2023 – 2025</div>
-        <div class="tl-title">M.S. Computer Science · Texas A&amp;M University</div>
+        <div class="tl-title" title="Master's degree in Computer Science at Texas A&M University, advised by Dr. Ruihong Huang, focusing on NLP, Deep Learning, and Generative AI">M.S. Computer Science · Texas A&amp;M University</div>
         <div class="tl-sub">Advised by Dr. Ruihong Huang · NLP, Deep Learning, Generative AI</div>
       </div>
     </div>
@@ -208,7 +323,7 @@
       <div class="tl-dot work">💼</div>
       <div class="tl-body">
         <div class="tl-date">2024 – 2025</div>
-        <div class="tl-title">Graduate TA · Texas A&amp;M</div>
+        <div class="tl-title" title="Graduate Teaching Assistant at Texas A&M for Artificial Intelligence and Database Systems courses">Graduate TA · Texas A&amp;M</div>
         <div class="tl-sub">Artificial Intelligence · Database Systems</div>
       </div>
     </div>
@@ -217,7 +332,7 @@
       <div class="tl-dot award">🏅</div>
       <div class="tl-body">
         <div class="tl-date">Feb 2025</div>
-        <div class="tl-title">WACV 2025 · UALBench — Poster Presentation</div>
+        <div class="tl-title" title="Poster presentation at WACV 2025 for UALBench, received travel grant of $1,000">WACV 2025 · UALBench — Poster Presentation</div>
         <div class="tl-sub">Travel grant recipient ($1,000)</div>
       </div>
     </div>
@@ -226,7 +341,7 @@
       <div class="tl-dot award">🏆</div>
       <div class="tl-body">
         <div class="tl-date">Jul 2025</div>
-        <div class="tl-title">Outstanding Paper Award · ACL 2025 NLP4PI Workshop</div>
+        <div class="tl-title" title="Outstanding Paper Award at ACL 2025 NLP4PI Workshop for CliME paper">Outstanding Paper Award · ACL 2025 NLP4PI Workshop</div>
         <div class="tl-sub">CliME: Evaluating Multimodal Climate Discourse</div>
       </div>
     </div>
@@ -235,7 +350,7 @@
       <div class="tl-dot work">💼</div>
       <div class="tl-body">
         <div class="tl-date">May – Jul 2025</div>
-        <div class="tl-title">Research Intern · AIISC Lab, U. of South Carolina</div>
+        <div class="tl-title" title="Research internship at AIISC Lab, University of South Carolina, working on encoder-free VLMs, compact SLMs, advised by Dr. Amit Sheth">Research Intern · AIISC Lab, U. of South Carolina</div>
         <div class="tl-sub">Encoder-free VLMs · compact SLMs · Advised by Dr. Amit Sheth</div>
       </div>
     </div>
@@ -244,7 +359,7 @@
       <div class="tl-dot edu">🎓</div>
       <div class="tl-body">
         <div class="tl-date">Aug 2025 – present</div>
-        <div class="tl-title">Ph.D. Animal Sciences · UIUC</div>
+        <div class="tl-title" title="Ph.D. in Animal Sciences at University of Illinois Urbana-Champaign, advised by Dr. Tiago Bresolin, focusing on AI + Livestock Genomics">Ph.D. Animal Sciences · UIUC</div>
         <div class="tl-sub">Advised by Dr. Tiago Bresolin · AI + Livestock Genomics</div>
       </div>
     </div>
@@ -253,7 +368,7 @@
       <div class="tl-dot award">🥈</div>
       <div class="tl-body">
         <div class="tl-date">Jan 2026</div>
-        <div class="tl-title">Oral Presentation · AAAI-26 · DETONATE</div>
+        <div class="tl-title" title="Oral presentation at AAAI-26 for DETONATE paper on AI Alignment Special Track">Oral Presentation · AAAI-26 · DETONATE</div>
         <div class="tl-sub">AI Alignment Special Track</div>
       </div>
     </div>
@@ -262,7 +377,7 @@
       <div class="tl-dot award">🏆</div>
       <div class="tl-body">
         <div class="tl-date">Mar 2026</div>
-        <div class="tl-title">2nd Place · Precision &amp; Digital Agriculture Hackathon · UIUC</div>
+        <div class="tl-title" title="2nd place in Precision & Digital Agriculture Hackathon at UIUC, Smart Livestock Track, Center for Digital Agriculture">2nd Place · Precision &amp; Digital Agriculture Hackathon · UIUC</div>
         <div class="tl-sub">Smart Livestock Track · Center for Digital Agriculture</div>
       </div>
     </div>
@@ -285,6 +400,7 @@
       <div class="pub-header">
         <span class="pub-badge badge-align">AAAI-26</span>
         <span class="pub-title">DETONATE: A Benchmark for Text-to-Image Alignment and Kernelized Direct Preference Optimization</span>
+        <a href="PLACEHOLDER_LINK" target="_blank" class="pub-link">View Paper</a>
       </div>
       <div class="pub-meta">
         <span class="first-author-tag">First author</span>
@@ -297,6 +413,7 @@
       <div class="pub-header">
         <span class="pub-badge badge-multi">EACL 2026</span>
         <span class="pub-title">Ask Me Again Differently: GRAS for Measuring Bias in VLMs on Gender, Race, Age, and Skin Tone</span>
+        <a href="PLACEHOLDER_LINK" target="_blank" class="pub-link">View Paper</a>
       </div>
       <div class="pub-meta"><span>Co-author · 2026</span></div>
     </div>
@@ -305,6 +422,7 @@
       <div class="pub-header">
         <span class="pub-badge badge-nlp">ACL 2025</span>
         <span class="pub-title">CliME: Evaluating Multimodal Climate Discourse on Social Media and the Climate Alignment Quotient</span>
+        <a href="PLACEHOLDER_LINK" target="_blank" class="pub-link">View Paper</a>
       </div>
       <div class="pub-meta">
         <span class="first-author-tag">First author</span>
@@ -317,6 +435,7 @@
       <div class="pub-header">
         <span class="pub-badge badge-nlp">KDD 2025</span>
         <span class="pub-title">InstaLearn: Continual Knowledge Updates for Domain Adaptation</span>
+        <a href="PLACEHOLDER_LINK" target="_blank" class="pub-link">View Paper</a>
       </div>
       <div class="pub-meta">
         <span class="first-author-tag">First author</span>
@@ -329,6 +448,7 @@
       <div class="pub-header">
         <span class="pub-badge badge-nlp">EMNLP 2025</span>
         <span class="pub-title">Alignment Quality Index (AQI)</span>
+        <a href="PLACEHOLDER_LINK" target="_blank" class="pub-link">View Paper</a>
       </div>
       <div class="pub-meta"><span>Co-author · Main Conference · 2025</span></div>
     </div>
@@ -337,6 +457,7 @@
       <div class="pub-header">
         <span class="pub-badge badge-nlp">EMNLP 2025</span>
         <span class="pub-title">Mitigating Gender Bias via Fostering Exploratory Thinking in LLMs</span>
+        <a href="PLACEHOLDER_LINK" target="_blank" class="pub-link">View Paper</a>
       </div>
       <div class="pub-meta"><span>Co-author · Findings · 2025</span></div>
     </div>
@@ -345,6 +466,7 @@
       <div class="pub-header">
         <span class="pub-badge badge-cv">WACV 2025</span>
         <span class="pub-title">UALBench: The First Comprehensive Unusual Activity Localization Benchmark</span>
+        <a href="PLACEHOLDER_LINK" target="_blank" class="pub-link">View Paper</a>
       </div>
       <div class="pub-meta">
         <span class="first-author-tag">First author</span>
@@ -356,6 +478,7 @@
       <div class="pub-header">
         <span class="pub-badge badge-cv">IEEE RO-MAN 2025</span>
         <span class="pub-title">Non-Uniform Spatial Alignment Errors in sUAS Imagery From Wide-Area Disasters</span>
+        <a href="PLACEHOLDER_LINK" target="_blank" class="pub-link">View Paper</a>
       </div>
       <div class="pub-meta"><span>Co-author · 2025</span></div>
     </div>
@@ -364,6 +487,7 @@
       <div class="pub-header">
         <span class="pub-badge badge-multi">AACL 2025</span>
         <span class="pub-title">Visual Counter Turing Test (VCT²)</span>
+        <a href="PLACEHOLDER_LINK" target="_blank" class="pub-link">View Paper</a>
       </div>
       <div class="pub-meta"><span>Co-author · IJCNLP-AACL · 2025</span></div>
     </div>
@@ -372,6 +496,7 @@
       <div class="pub-header">
         <span class="pub-badge badge-multi">Springer 2023</span>
         <span class="pub-title">Affective Social Anthropomorphic Intelligent System</span>
+        <a href="PLACEHOLDER_LINK" target="_blank" class="pub-link">View Paper</a>
       </div>
       <div class="pub-meta"><span>Co-author · Multimedia Tools &amp; Applications (Q1) · 2023</span></div>
     </div>
@@ -380,6 +505,7 @@
       <div class="pub-header">
         <span class="pub-badge badge-cv">IICAIET 2022</span>
         <span class="pub-title">SynthEnsemble: A Fusion of CNN, Vision Transformer, and Hybrid Models for Chest X-Ray Classification</span>
+        <a href="PLACEHOLDER_LINK" target="_blank" class="pub-link">View Paper</a>
       </div>
       <div class="pub-meta"><span>Co-author · IEEE · 2022</span></div>
     </div>
@@ -388,9 +514,35 @@
       <div class="pub-header">
         <span class="pub-badge badge-cv">IICAIET 2022</span>
         <span class="pub-title">A Comparative Analysis of Lumpy Skin Disease Prediction through ML Approaches</span>
+        <a href="PLACEHOLDER_LINK" target="_blank" class="pub-link">View Paper</a>
       </div>
       <div class="pub-meta"><span>Co-author · IEEE · 2022</span></div>
     </div>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <p class="section-label">Projects & Portfolio</p>
+  <div class="portfolio-section">
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <div class="portfolio-title">Project 1</div>
+        <div class="portfolio-desc">Description of project.</div>
+        <div class="portfolio-links">
+          <a href="https://github.com/user/repo" target="_blank" class="portfolio-link">GitHub</a>
+          <a href="https://demo.com" target="_blank" class="portfolio-link">Demo</a>
+        </div>
+      </div>
+      <!-- Add more portfolio cards as needed -->
+    </div>
+  </div>
+
+  <!-- CONTACT MODAL PLACEHOLDER -->
+  <div id="contact-modal" class="mfp-hide" style="background: white; padding: 20px; border-radius: 8px; max-width: 400px; margin: auto;">
+    <h3>Contact Me</h3>
+    <p>Email: your.email@example.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+    <!-- Placeholder: Add a contact form here if needed, e.g., using Formspree or static form -->
+    <p>Instruction: Replace with actual contact form or Calendly embed if desired.</p>
   </div>
 
 </div>
@@ -437,6 +589,29 @@
       card.classList.toggle('hidden', !show);
     });
   });
+
+  // Contact modal
+  function openContactModal() {
+    $.magnificPopup.open({
+      items: { src: '#contact-modal' },
+      type: 'inline'
+    });
+  }
+
+  // Skills filter (placeholder)
+  document.getElementById('skills').addEventListener('click', e => {
+    const btn = e.target.closest('.skill-tag');
+    if (!btn) return;
+    document.querySelectorAll('.skill-tag').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const skill = btn.dataset.skill;
+    // Placeholder: Filter skill-items based on data-skills
+    console.log('Filter by skill:', skill);
+  });
+
+  // Placeholder: Add Google Analytics tracking
+  // gtag('event', 'download_resume', { ... });
+  // Instruction: Integrate Google Analytics for tracking downloads and contacts.
 </script>
 {% endraw %}
  
