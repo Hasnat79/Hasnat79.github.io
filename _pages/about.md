@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 {% include interactive-profile.html %}
-
+<!-- 
 {% if site.google_scholar_stats_use_cdn %}
 {% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
 {% else %}
@@ -255,4 +255,4 @@ Co-author.
 
 <div style="display: none;">
     <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=8VTPTlKP4lJplkK2W5lW_-YLGoIzrMYY0zH3jZOw2ec&cl=ffffff&w=a"></script>
-</div>
+</div> -->
