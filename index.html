@@ -17,7 +17,7 @@
   <meta property="profile:first_name" content="Hasnat">
   <meta property="profile:last_name" content="Abdullah">
 
-  <!-- Schema.org structured data for AI scanners -->
+  <!-- Schema.org structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -34,20 +34,36 @@
       "https://github.com/Hasnat79",
       "https://scholar.google.com/citations?user=jFgmL9wAAAAJ&hl=en"
     ],
-    "knowsAbout": ["Natural Language Processing", "Computer Vision", "Multimodal AI", "Deep Learning", "AI Alignment", "Livestock Genomics", "Continual Learning"],
+    "knowsAbout": [
+      "Natural Language Processing",
+      "Computer Vision",
+      "Multimodal AI",
+      "Deep Learning",
+      "AI Alignment",
+      "Livestock Genomics",
+      "Continual Learning"
+    ],
     "alumniOf": [
       {"@type": "CollegeOrUniversity", "name": "Texas A&M University"},
       {"@type": "CollegeOrUniversity", "name": "BRAC University"}
     ],
-    "award": ["Outstanding Paper Award ACL 2025", "Second Place Precision & Digital Agriculture Hackathon UIUC 2026", "Travel Grant WACV 2025"]
+    "award": [
+      "Outstanding Paper Award ACL 2025",
+      "Second Place Precision & Digital Agriculture Hackathon UIUC 2026",
+      "Travel Grant WACV 2025"
+    ]
   }
   </script>
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
+    /* ════════════════════════════════════════════════════════════ */
+    /* VARIABLES & RESET                                            */
+    /* ════════════════════════════════════════════════════════════ */
     :root {
       --cream: #faf8f4;
       --warm-white: #ffffff;
@@ -69,9 +85,15 @@
       --sans: 'DM Sans', system-ui, sans-serif;
     }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: var(--sans);
@@ -82,17 +104,27 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
 
-    /* ── LAYOUT ── */
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ════════════════════════════════════════════════════════════ */
+    /* LAYOUT — Container & Grid                                     */
+    /* ════════════════════════════════════════════════════════════ */
     .site-wrap {
       max-width: 1100px;
       margin: 0 auto;
       padding: 0 2rem;
     }
 
-    /* ── TOP NAV ── */
+    /* ════════════════════════════════════════════════════════════ */
+    /* NAVIGATION                                                    */
+    /* ════════════════════════════════════════════════════════════ */
     nav {
       position: sticky;
       top: 0;
@@ -102,11 +134,13 @@
       border-bottom: 1px solid var(--border);
       padding: 0.75rem 0;
     }
+
     nav .site-wrap {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+
     .nav-name {
       font-family: var(--serif);
       font-size: 1.05rem;
@@ -114,11 +148,13 @@
       color: var(--ink);
       letter-spacing: -0.01em;
     }
+
     .nav-links {
       display: flex;
       gap: 2rem;
       list-style: none;
     }
+
     .nav-links a {
       font-size: 0.82rem;
       font-weight: 500;
@@ -127,9 +163,15 @@
       text-transform: uppercase;
       transition: color 0.15s;
     }
-    .nav-links a:hover { color: var(--accent); text-decoration: none; }
 
-    /* ── HERO ── */
+    .nav-links a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* ════════════════════════════════════════════════════════════ */
+    /* HERO SECTION                                                  */
+    /* ════════════════════════════════════════════════════════════ */
     .hero {
       padding: 5rem 0 3.5rem;
       display: grid;
@@ -138,6 +180,7 @@
       align-items: start;
       border-bottom: 1px solid var(--border);
     }
+
     .hero-eyebrow {
       font-size: 0.75rem;
       font-weight: 500;
@@ -146,6 +189,7 @@
       color: var(--accent);
       margin-bottom: 1rem;
     }
+
     .hero h1 {
       font-family: var(--serif);
       font-size: clamp(2.2rem, 5vw, 3.4rem);
@@ -155,6 +199,7 @@
       letter-spacing: -0.02em;
       margin-bottom: 1.25rem;
     }
+
     .hero-bio {
       font-size: 1.05rem;
       line-height: 1.8;
@@ -162,14 +207,20 @@
       max-width: 560px;
       margin-bottom: 1.75rem;
     }
-    .hero-bio strong { color: var(--ink); font-weight: 500; }
 
+    .hero-bio strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    /* ── CTA Buttons */
     .cta-row {
       display: flex;
       gap: 0.75rem;
       flex-wrap: wrap;
       align-items: center;
     }
+
     .btn {
       display: inline-flex;
       align-items: center;
@@ -182,19 +233,32 @@
       cursor: pointer;
       border: 1.5px solid transparent;
     }
+
     .btn-primary {
       background: var(--accent);
       color: white;
       border-color: var(--accent);
     }
-    .btn-primary:hover { background: #a0501f; border-color: #a0501f; text-decoration: none; }
+
+    .btn-primary:hover {
+      background: #a0501f;
+      border-color: #a0501f;
+      text-decoration: none;
+    }
+
     .btn-outline {
       background: transparent;
       color: var(--ink-soft);
       border-color: var(--border);
     }
-    .btn-outline:hover { border-color: var(--ink-muted); color: var(--ink); text-decoration: none; }
 
+    .btn-outline:hover {
+      border-color: var(--ink-muted);
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    /* ── Hero Photo */
     .hero-photo {
       width: 160px;
       height: 160px;
@@ -203,6 +267,7 @@
       border: 3px solid var(--border);
       flex-shrink: 0;
     }
+
     .hero-photo-placeholder {
       width: 160px;
       height: 160px;
@@ -218,18 +283,25 @@
       flex-shrink: 0;
     }
 
-    /* ── QUICK STATS ── */
+    /* ════════════════════════════════════════════════════════════ */
+    /* STATS BAR                                                     */
+    /* ════════════════════════════════════════════════════════════ */
     .stats-bar {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       border-bottom: 1px solid var(--border);
     }
+
     .stat-item {
       padding: 2rem 0;
       text-align: center;
       border-right: 1px solid var(--border);
     }
-    .stat-item:last-child { border-right: none; }
+
+    .stat-item:last-child {
+      border-right: none;
+    }
+
     .stat-n {
       font-family: var(--serif);
       font-size: 2.4rem;
@@ -239,6 +311,7 @@
       line-height: 1;
       margin-bottom: 0.35rem;
     }
+
     .stat-label {
       font-size: 0.75rem;
       color: var(--ink-muted);
@@ -246,7 +319,9 @@
       text-transform: uppercase;
     }
 
-    /* ── MAIN BODY ── */
+    /* ════════════════════════════════════════════════════════════ */
+    /* MAIN BODY GRID                                                */
+    /* ════════════════════════════════════════════════════════════ */
     .body-grid {
       display: grid;
       grid-template-columns: 1fr 300px;
@@ -255,27 +330,36 @@
       align-items: start;
     }
 
-    /* ── SECTION ── */
-    .section { margin-bottom: 3.5rem; }
+    /* ════════════════════════════════════════════════════════════ */
+    /* SECTION & HEADERS                                             */
+    /* ════════════════════════════════════════════════════════════ */
+    .section {
+      margin-bottom: 3.5rem;
+    }
+
     .section-header {
       display: flex;
       align-items: center;
       gap: 0.75rem;
       margin-bottom: 1.5rem;
     }
+
     .section-header h2 {
       font-family: var(--serif);
       font-size: 1.3rem;
       font-weight: 500;
       color: var(--ink);
     }
+
     .section-line {
       flex: 1;
       height: 1px;
       background: var(--border);
     }
 
-    /* ── NEWS ── */
+    /* ════════════════════════════════════════════════════════════ */
+    /* NEWS ITEMS                                                    */
+    /* ════════════════════════════════════════════════════════════ */
     .news-item {
       display: grid;
       grid-template-columns: 80px 1fr;
@@ -284,10 +368,28 @@
       border-bottom: 1px solid var(--border);
       font-size: 0.9rem;
     }
-    .news-item:last-child { border-bottom: none; }
-    .news-date { color: var(--ink-faint); font-size: 0.78rem; padding-top: 2px; }
-    .news-text { color: var(--ink-soft); line-height: 1.5; }
-    .news-text strong { color: var(--ink); font-weight: 500; }
+
+    .news-item:last-child {
+      border-bottom: none;
+    }
+
+    .news-date {
+      color: var(--ink-faint);
+      font-size: 0.78rem;
+      padding-top: 2px;
+    }
+
+    .news-text {
+      color: var(--ink-soft);
+      line-height: 1.5;
+    }
+
+    .news-text strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    /* ── Badge Pills */
     .badge-pill {
       display: inline-block;
       font-size: 0.68rem;
@@ -297,18 +399,37 @@
       vertical-align: middle;
       margin-right: 4px;
     }
-    .pill-award { background: var(--gold-soft); color: var(--gold); }
-    .pill-pub { background: var(--accent-soft); color: var(--accent); }
-    .pill-talk { background: var(--blue-soft); color: var(--blue); }
-    .pill-edu { background: var(--green-soft); color: var(--green); }
 
-    /* ── PUBLICATIONS ── */
+    .pill-award {
+      background: var(--gold-soft);
+      color: var(--gold);
+    }
+
+    .pill-pub {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .pill-talk {
+      background: var(--blue-soft);
+      color: var(--blue);
+    }
+
+    .pill-edu {
+      background: var(--green-soft);
+      color: var(--green);
+    }
+
+    /* ════════════════════════════════════════════════════════════ */
+    /* PUBLICATIONS & FILTERING                                      */
+    /* ════════════════════════════════════════════════════════════ */
     .filter-bar {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
       margin-bottom: 1.25rem;
     }
+
     .ftag {
       font-size: 0.75rem;
       font-weight: 500;
@@ -320,19 +441,35 @@
       cursor: pointer;
       transition: all 0.12s;
     }
-    .ftag.active, .ftag:hover {
+
+    .ftag.active,
+    .ftag:hover {
       border-color: var(--accent);
       color: var(--accent);
       background: var(--accent-soft);
     }
 
+    /* ── Publication Items */
     .pub-item {
       padding: 1.1rem 0;
       border-bottom: 1px solid var(--border);
     }
-    .pub-item:last-child { border-bottom: none; }
-    .pub-item.hidden { display: none; }
-    .pub-top { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.35rem; }
+
+    .pub-item:last-child {
+      border-bottom: none;
+    }
+
+    .pub-item.hidden {
+      display: none;
+    }
+
+    .pub-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.35rem;
+    }
+
     .venue-tag {
       font-size: 0.7rem;
       font-weight: 600;
@@ -343,16 +480,34 @@
       margin-top: 2px;
       letter-spacing: 0.02em;
     }
-    .vtag-nlp { background: var(--green-soft); color: var(--green); }
-    .vtag-cv { background: var(--blue-soft); color: var(--blue); }
-    .vtag-align { background: #fde8f0; color: #8b2252; }
-    .vtag-multi { background: var(--gold-soft); color: var(--gold); }
+
+    .vtag-nlp {
+      background: var(--green-soft);
+      color: var(--green);
+    }
+
+    .vtag-cv {
+      background: var(--blue-soft);
+      color: var(--blue);
+    }
+
+    .vtag-align {
+      background: #fde8f0;
+      color: #8b2252;
+    }
+
+    .vtag-multi {
+      background: var(--gold-soft);
+      color: var(--gold);
+    }
+
     .pub-title {
       font-size: 0.92rem;
       font-weight: 500;
       color: var(--ink);
       line-height: 1.45;
     }
+
     .pub-meta {
       font-size: 0.78rem;
       color: var(--ink-muted);
@@ -362,18 +517,37 @@
       flex-wrap: wrap;
       margin-top: 0.3rem;
     }
+
+    /* ── Meta Tags */
     .meta-tag {
       font-size: 0.7rem;
       padding: 1px 7px;
       border-radius: 3px;
       font-weight: 500;
     }
-    .meta-first { background: var(--green-soft); color: var(--green); }
-    .meta-award { background: var(--gold-soft); color: var(--gold); }
-    .meta-oral { background: var(--accent-soft); color: var(--accent); }
 
-    /* ── TIMELINE ── */
-    .tl { position: relative; }
+    .meta-first {
+      background: var(--green-soft);
+      color: var(--green);
+    }
+
+    .meta-award {
+      background: var(--gold-soft);
+      color: var(--gold);
+    }
+
+    .meta-oral {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    /* ════════════════════════════════════════════════════════════ */
+    /* TIMELINE                                                      */
+    /* ════════════════════════════════════════════════════════════ */
+    .tl {
+      position: relative;
+    }
+
     .tl::before {
       content: '';
       position: absolute;
@@ -383,6 +557,7 @@
       width: 1.5px;
       background: var(--border);
     }
+
     .tl-row {
       display: flex;
       gap: 1.25rem;
@@ -391,7 +566,12 @@
       transform: translateY(10px);
       transition: opacity 0.4s ease, transform 0.4s ease;
     }
-    .tl-row.vis { opacity: 1; transform: translateY(0); }
+
+    .tl-row.vis {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     .tl-dot {
       width: 22px;
       height: 22px;
@@ -405,16 +585,52 @@
       position: relative;
       z-index: 1;
     }
-    .dot-edu { background: var(--green-soft); border: 1.5px solid #a8d5be; }
-    .dot-work { background: var(--blue-soft); border: 1.5px solid #b0c8e8; }
-    .dot-award { background: var(--gold-soft); border: 1.5px solid #d4b870; }
-    .tl-content { flex: 1; }
-    .tl-when { font-size: 0.72rem; color: var(--ink-faint); margin-bottom: 2px; }
-    .tl-what { font-size: 0.88rem; font-weight: 500; color: var(--ink); line-height: 1.4; }
-    .tl-where { font-size: 0.78rem; color: var(--ink-muted); margin-top: 2px; }
 
-    /* ── SIDEBAR ── */
-    .sidebar { position: sticky; top: 5rem; }
+    .dot-edu {
+      background: var(--green-soft);
+      border: 1.5px solid #a8d5be;
+    }
+
+    .dot-work {
+      background: var(--blue-soft);
+      border: 1.5px solid #b0c8e8;
+    }
+
+    .dot-award {
+      background: var(--gold-soft);
+      border: 1.5px solid #d4b870;
+    }
+
+    .tl-content {
+      flex: 1;
+    }
+
+    .tl-when {
+      font-size: 0.72rem;
+      color: var(--ink-faint);
+      margin-bottom: 2px;
+    }
+
+    .tl-what {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.4;
+    }
+
+    .tl-where {
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      margin-top: 2px;
+    }
+
+    /* ════════════════════════════════════════════════════════════ */
+    /* SIDEBAR                                                       */
+    /* ════════════════════════════════════════════════════════════ */
+    .sidebar {
+      position: sticky;
+      top: 5rem;
+    }
 
     .side-card {
       background: var(--warm-white);
@@ -423,6 +639,7 @@
       padding: 1.5rem;
       margin-bottom: 1.25rem;
     }
+
     .side-card h3 {
       font-size: 0.72rem;
       font-weight: 600;
@@ -432,6 +649,7 @@
       margin-bottom: 1rem;
     }
 
+    /* ── Contact Info */
     .contact-row {
       display: flex;
       align-items: center;
@@ -440,14 +658,22 @@
       color: var(--ink-soft);
       margin-bottom: 0.6rem;
     }
-    .contact-row a { color: var(--accent); }
-    .contact-row svg { flex-shrink: 0; }
 
+    .contact-row a {
+      color: var(--accent);
+    }
+
+    .contact-row svg {
+      flex-shrink: 0;
+    }
+
+    /* ── Skills Cloud */
     .skills-cloud {
       display: flex;
       flex-wrap: wrap;
       gap: 0.4rem;
     }
+
     .skill-chip {
       font-size: 0.72rem;
       padding: 3px 10px;
@@ -457,6 +683,7 @@
       background: var(--cream);
     }
 
+    /* ── Awards List */
     .award-item {
       font-size: 0.82rem;
       color: var(--ink-soft);
@@ -464,10 +691,21 @@
       border-bottom: 1px solid var(--border);
       line-height: 1.4;
     }
-    .award-item:last-child { border-bottom: none; }
-    .award-item strong { display: block; color: var(--ink); font-weight: 500; font-size: 0.8rem; }
 
-    /* ── FOOTER ── */
+    .award-item:last-child {
+      border-bottom: none;
+    }
+
+    .award-item strong {
+      display: block;
+      color: var(--ink);
+      font-weight: 500;
+      font-size: 0.8rem;
+    }
+
+    /* ════════════════════════════════════════════════════════════ */
+    /* FOOTER                                                        */
+    /* ════════════════════════════════════════════════════════════ */
     footer {
       border-top: 1px solid var(--border);
       padding: 2rem 0;
@@ -476,430 +714,695 @@
       color: var(--ink-faint);
     }
 
-    /* ── ANIMATIONS ── */
+    /* ════════════════════════════════════════════════════════════ */
+    /* ANIMATIONS                                                    */
+    /* ════════════════════════════════════════════════════════════ */
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(18px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .hero { animation: fadeUp 0.6s ease both; }
-    .stats-bar { animation: fadeUp 0.6s 0.15s ease both; }
 
-    /* ── RESPONSIVE ── */
+    .hero {
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .stats-bar {
+      animation: fadeUp 0.6s 0.15s ease both;
+    }
+
+    /* ════════════════════════════════════════════════════════════ */
+    /* RESPONSIVE DESIGN                                             */
+    /* ════════════════════════════════════════════════════════════ */
     @media (max-width: 768px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-photo-placeholder, .hero-photo { display: none; }
-      .body-grid { grid-template-columns: 1fr; }
-      .stats-bar { grid-template-columns: repeat(2, 1fr); }
-      .stat-item:nth-child(2) { border-right: none; }
-      .nav-links { display: none; }
-      .sidebar { position: static; }
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-photo-placeholder,
+      .hero-photo {
+        display: none;
+      }
+
+      .body-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stat-item:nth-child(2) {
+        border-right: none;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .sidebar {
+        position: static;
+      }
     }
   </style>
 </head>
+
 <body>
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <!-- NAVIGATION                                                    -->
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="site-wrap">
+      <span class="nav-name">Hasnat Md. Abdullah</span>
+      <ul class="nav-links">
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<!-- ── NAV ── -->
-<nav role="navigation" aria-label="Main navigation">
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <!-- HERO SECTION                                                  -->
+  <!-- ════════════════════════════════════════════════════════════ -->
   <div class="site-wrap">
-    <span class="nav-name">Hasnat Md. Abdullah</span>
-    <ul class="nav-links">
-      <li><a href="#news">News</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#journey">Journey</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <header class="hero" role="banner">
+      <div>
+        <p class="hero-eyebrow">AI Researcher · PhD Student at UIUC</p>
+        <h1>Hasnat Md.<br>Abdullah</h1>
+        
+        <p class="hero-bio">
+          I build <strong>AI systems that bridge machine learning and livestock science</strong>, 
+          using 3D computer vision and SNP genomics to automate cattle phenotyping at scale. 
+          Previously at <strong>Texas A&M</strong> (M.S. CS) and <strong>AIISC, University of South Carolina</strong>, 
+          I worked on multimodal LLMs, AI alignment, and NLP for social good.
+        </p>
+        
+        <p class="hero-bio" style="font-size:0.88rem; color: var(--ink-muted); margin-bottom: 1.5rem;">
+          12 peer-reviewed publications · AAAI · ACL · EMNLP · WACV · KDD · EACL
+        </p>
+
+        <div class="cta-row">
+          <a href="mailto:hasnatabdullah79@gmail.com" class="btn btn-primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,12 2,6"/>
+            </svg>
+            Get in touch
+          </a>
+          <a href="https://scholar.google.com/citations?user=jFgmL9wAAAAJ&hl=en" target="_blank" class="btn btn-outline">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 8v4l3 3"/>
+            </svg>
+            Google Scholar
+          </a>
+          <a href="https://github.com/Hasnat79" target="_blank" class="btn btn-outline">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.2.08 1.85 1.24 1.85 1.24 1.08 1.84 2.82 1.31 3.51 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <img src="images/curt.jpg" class="hero-photo" alt="Hasnat Md. Abdullah">
+    </header>
   </div>
-</nav>
 
-<!-- ── HERO ── -->
-<div class="site-wrap">
-  <header class="hero" role="banner">
-    <div>
-      <p class="hero-eyebrow">AI Researcher · PhD Student at UIUC</p>
-      <h1>Hasnat Md.<br>Abdullah</h1>
-      <p class="hero-bio">
-        I build <strong>AI systems that bridge machine learning and livestock science</strong>, using 3D computer vision and SNP genomics to automate cattle phenotyping at scale. Previously at <strong>Texas A&M</strong> (M.S. CS) and <strong>AIISC, University of South Carolina</strong>, I worked on multimodal LLMs, AI alignment, and NLP for social good.
-      </p>
-      <p class="hero-bio" style="font-size:0.88rem; color: var(--ink-muted); margin-bottom: 1.5rem;">
-        12 peer-reviewed publications · AAAI · ACL · EMNLP · WACV · KDD · EACL
-      </p>
-      <div class="cta-row">
-        <a href="mailto:hasnatabdullah79@gmail.com" class="btn btn-primary">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-          Get in touch
-        </a>
-        <a href="https://scholar.google.com/citations?user=jFgmL9wAAAAJ&hl=en" target="_blank" class="btn btn-outline">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-          Google Scholar
-        </a>
-        <a href="https://github.com/Hasnat79" target="_blank" class="btn btn-outline">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.2.08 1.85 1.24 1.85 1.24 1.08 1.84 2.82 1.31 3.51 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          GitHub
-        </a>
-      </div>
-    </div>
-    <!-- <div class="hero-photo-placeholder" aria-hidden="true">HA</div> -->
-    <img src="images/curt.jpg" class="hero-photo" alt="Hasnat Md. Abdullah">
-  </header>
-</div>
-
-<!-- ── STATS ── -->
-<div class="site-wrap">
-  <div class="stats-bar" role="region" aria-label="Career highlights">
-    <div class="stat-item">
-      <span class="stat-n" id="c-pub">12</span>
-      <span class="stat-label">Publications</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-n" id="c-first">5</span>
-      <span class="stat-label">First-author</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-n" id="c-oral">3</span>
-      <span class="stat-label">Oral / Spotlight</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-n" id="c-award">4+</span>
-      <span class="stat-label">Awards</span>
-    </div>
-  </div>
-</div>
-
-<!-- ── BODY ── -->
-<div class="site-wrap">
-  <div class="body-grid">
-
-    <!-- LEFT COLUMN -->
-    <main>
-
-      <!-- NEWS -->
-      <section class="section" id="news" aria-label="Recent news">
-        <div class="section-header">
-          <h2>Recent news</h2>
-          <div class="section-line"></div>
-        </div>
-
-        <div class="news-item">
-          <div class="news-date">Mar 2026</div>
-          <div class="news-text"><span class="badge-pill pill-award">Award</span><strong>2nd Place</strong> — Smart Livestock Track, Precision &amp; Digital Agriculture Hackathon, UIUC Center for Digital Agriculture.</div>
-        </div>
-        <div class="news-item">
-          <div class="news-date">Mar 2026</div>
-          <div class="news-text"><span class="badge-pill pill-talk">Talk</span>Poster presentation at <strong>EACL 2026</strong> — <em>GRAS: Measuring Bias in VLMs on Gender, Race, Age, and Skin Tone.</em></div>
-        </div>
-        <div class="news-item">
-          <div class="news-date">Jan 2026</div>
-          <div class="news-text"><span class="badge-pill pill-talk">Oral</span>Oral presentation at <strong>AAAI-26 Special Track on AI Alignment</strong> — <em>DETONATE</em>.</div>
-        </div>
-        <div class="news-item">
-          <div class="news-date">Aug 2025</div>
-          <div class="news-text"><span class="badge-pill pill-talk">Spotlight</span>Spotlight at <strong>KDD'25 RelKD Workshop</strong> — <em>InstaLearn: Continual Knowledge Updates for Domain Adaptation.</em></div>
-        </div>
-        <div class="news-item">
-          <div class="news-date">Aug 2025</div>
-          <div class="news-text"><span class="badge-pill pill-edu">PhD</span>Started <strong>Ph.D. in Animal Sciences</strong> at the University of Illinois Urbana-Champaign.</div>
-        </div>
-        <div class="news-item">
-          <div class="news-date">Jul 2025</div>
-          <div class="news-text"><span class="badge-pill pill-award">Award</span><strong>Outstanding Paper Award</strong> at ACL 2025 NLP for Positive Impact Workshop — <em>CliME.</em></div>
-        </div>
-        <div class="news-item">
-          <div class="news-date">Feb 2025</div>
-          <div class="news-text"><span class="badge-pill pill-pub">Paper</span>Poster presentation at <strong>WACV 2025</strong> — <em>UALBench: The First Comprehensive Unusual Activity Localization Benchmark.</em></div>
-        </div>
-      </section>
-
-      <!-- PUBLICATIONS -->
-      <section class="section" id="publications" aria-label="Publications">
-        <div class="section-header">
-          <h2>Publications</h2>
-          <div class="section-line"></div>
-        </div>
-
-        <div class="filter-bar" role="group" aria-label="Filter publications by topic">
-          <button class="ftag active" data-f="all">All (12)</button>
-          <button class="ftag" data-f="first">First author</button>
-          <button class="ftag" data-f="nlp">NLP</button>
-          <button class="ftag" data-f="cv">Computer Vision</button>
-          <button class="ftag" data-f="align">AI Alignment</button>
-          <button class="ftag" data-f="multi">Multimodal</button>
-        </div>
-
-        <div id="publist">
-
-          <article class="pub-item" data-t="align multi first">
-            <div class="pub-top">
-              <span class="venue-tag vtag-align">AAAI-26</span>
-              <h3 class="pub-title">DETONATE: A Benchmark for Text-to-Image Alignment and Kernelized Direct Preference Optimization</h3>
-            </div>
-            <div class="pub-meta">
-              <span class="meta-tag meta-first">First author</span>
-              <span class="meta-tag meta-oral">Oral presentation</span>
-              <span>AI Alignment Special Track · 2026</span>
-            </div>
-          </article>
-
-          <article class="pub-item" data-t="multi">
-            <div class="pub-top">
-              <span class="venue-tag vtag-multi">EACL 2026</span>
-              <h3 class="pub-title">Ask Me Again Differently: GRAS for Measuring Bias in VLMs on Gender, Race, Age, and Skin Tone</h3>
-            </div>
-            <div class="pub-meta"><span>Co-author · 2026</span></div>
-          </article>
-
-          <article class="pub-item" data-t="nlp multi first">
-            <div class="pub-top">
-              <span class="venue-tag vtag-nlp">ACL 2025</span>
-              <h3 class="pub-title">CliME: Evaluating Multimodal Climate Discourse on Social Media and the Climate Alignment Quotient</h3>
-            </div>
-            <div class="pub-meta">
-              <span class="meta-tag meta-first">First author</span>
-              <span class="meta-tag meta-award">Outstanding Paper Award</span>
-              <span>NLP4PI Workshop · 2025</span>
-            </div>
-          </article>
-
-          <article class="pub-item" data-t="nlp first">
-            <div class="pub-top">
-              <span class="venue-tag vtag-nlp">KDD 2025</span>
-              <h3 class="pub-title">InstaLearn: Continual Knowledge Updates for Domain Adaptation</h3>
-            </div>
-            <div class="pub-meta">
-              <span class="meta-tag meta-first">First author</span>
-              <span class="meta-tag meta-oral">Spotlight</span>
-              <span>RelKD Workshop · 2025</span>
-            </div>
-          </article>
-
-          <article class="pub-item" data-t="nlp align">
-            <div class="pub-top">
-              <span class="venue-tag vtag-nlp">EMNLP 2025</span>
-              <h3 class="pub-title">Alignment Quality Index (AQI)</h3>
-            </div>
-            <div class="pub-meta"><span>Co-author · Main Conference · 2025</span></div>
-          </article>
-
-          <article class="pub-item" data-t="nlp">
-            <div class="pub-top">
-              <span class="venue-tag vtag-nlp">EMNLP 2025</span>
-              <h3 class="pub-title">Mitigating Gender Bias via Fostering Exploratory Thinking in LLMs</h3>
-            </div>
-            <div class="pub-meta"><span>Co-author · Findings · 2025</span></div>
-          </article>
-
-          <article class="pub-item" data-t="cv first">
-            <div class="pub-top">
-              <span class="venue-tag vtag-cv">WACV 2025</span>
-              <h3 class="pub-title">UALBench: The First Comprehensive Unusual Activity Localization Benchmark</h3>
-            </div>
-            <div class="pub-meta">
-              <span class="meta-tag meta-first">First author</span>
-              <span>2025</span>
-            </div>
-          </article>
-
-          <article class="pub-item" data-t="cv">
-            <div class="pub-top">
-              <span class="venue-tag vtag-cv">IEEE RO-MAN 2025</span>
-              <h3 class="pub-title">Non-Uniform Spatial Alignment Errors in sUAS Imagery From Wide-Area Disasters</h3>
-            </div>
-            <div class="pub-meta"><span>Co-author · 2025</span></div>
-          </article>
-
-          <article class="pub-item" data-t="multi nlp">
-            <div class="pub-top">
-              <span class="venue-tag vtag-multi">AACL 2025</span>
-              <h3 class="pub-title">Visual Counter Turing Test (VCT²)</h3>
-            </div>
-            <div class="pub-meta"><span>Co-author · IJCNLP-AACL · 2025</span></div>
-          </article>
-
-          <article class="pub-item" data-t="multi">
-            <div class="pub-top">
-              <span class="venue-tag vtag-multi">Springer 2023</span>
-              <h3 class="pub-title">Affective Social Anthropomorphic Intelligent System</h3>
-            </div>
-            <div class="pub-meta"><span>Co-author · Multimedia Tools &amp; Applications (Q1) · 2023</span></div>
-          </article>
-
-          <article class="pub-item" data-t="cv">
-            <div class="pub-top">
-              <span class="venue-tag vtag-cv">IICAIET 2022</span>
-              <h3 class="pub-title">SynthEnsemble: A Fusion of CNN, Vision Transformer, and Hybrid Models for Chest X-Ray Classification</h3>
-            </div>
-            <div class="pub-meta"><span>Co-author · IEEE · 2022</span></div>
-          </article>
-
-          <article class="pub-item" data-t="cv">
-            <div class="pub-top">
-              <span class="venue-tag vtag-cv">IICAIET 2022</span>
-              <h3 class="pub-title">A Comparative Analysis of Lumpy Skin Disease Prediction through ML Approaches</h3>
-            </div>
-            <div class="pub-meta"><span>Co-author · IEEE · 2022</span></div>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- JOURNEY -->
-      <section class="section" id="journey" aria-label="Academic and professional journey">
-        <div class="section-header">
-          <h2>Journey</h2>
-          <div class="section-line"></div>
-        </div>
-
-        <div class="tl">
-          <div class="tl-row"><div class="tl-dot dot-edu">🎓</div><div class="tl-content"><div class="tl-when">Aug 2025 – present</div><div class="tl-what">Ph.D. in Animal Sciences · University of Illinois Urbana-Champaign</div><div class="tl-where">Advisor: Dr. Tiago Bresolin · AI + Livestock Genomics · Precision Agriculture</div></div></div>
-          <div class="tl-row"><div class="tl-dot dot-work">🔬</div><div class="tl-content"><div class="tl-when">May – Jul 2025</div><div class="tl-what">Research Intern · AIISC Lab, University of South Carolina</div><div class="tl-where">Encoder-free VLMs · Compact enterprise SLMs · Advisors: Dr. Amit Sheth, Dr. Amitava Das</div></div></div>
-          <div class="tl-row"><div class="tl-dot dot-edu">🎓</div><div class="tl-content"><div class="tl-when">Jan 2023 – May 2025</div><div class="tl-what">M.S. Computer Science · Texas A&M University</div><div class="tl-where">Advisor: Dr. Ruihong Huang · NLP · Deep Learning · Generative AI</div></div></div>
-          <div class="tl-row"><div class="tl-dot dot-work">💼</div><div class="tl-content"><div class="tl-when">Mar 2024 – July 2025</div><div class="tl-what">Volunteer  · Brazos Valley Psychological Association (BVPA)</div><div class="tl-where">Integrated Support Engineer </div></div></div>
-          <div class="tl-row"><div class="tl-dot dot-work">💼</div><div class="tl-content"><div class="tl-when">Jan 2024 – May 2025</div><div class="tl-what">Graduate Teaching Assistant · Texas A&M University</div><div class="tl-where">Artificial Intelligence · Database Systems</div></div></div>
-          <div class="tl-row"><div class="tl-dot dot-work">💼</div><div class="tl-content"><div class="tl-when">Jan 2024 – Aug 2025</div><div class="tl-what">Research Collaborator · Humanitarian Robotics and AI Lab, TAMU</div><div class="tl-where">PI: Prof. Robin Murphy · Building/road damage assessment · sUAS imagery</div></div></div>
-          <div class="tl-row"><div class="tl-dot dot-work">💼</div><div class="tl-content"><div class="tl-when">Jan 2025 – Aug 2025</div><div class="tl-what">Research Collaborator · IDRT</div><div class="tl-where">PI: Dr. Jooho Kim · Community structure for disaster impact predictions</div></div></div>
-          <div class="tl-row"><div class="tl-dot dot-work">💼</div><div class="tl-content"><div class="tl-when">Aug 2021 – Dec 2022</div><div class="tl-what">Lecturer · BRAC University</div><div class="tl-where">Programming Language I · Algorithm Analysis &amp; Design</div></div></div>
-          <div class="tl-row"><div class="tl-dot dot-edu">🎓</div><div class="tl-content"><div class="tl-when">Jan 2017 – Dec 2020</div><div class="tl-what">B.Sc. Computer Science · BRAC University, Dhaka</div><div class="tl-where">In-major CGPA: 3.87 · Merit scholarship · Vice Chancellor's List</div></div></div>
-        </div>
-      </section>
-
-<!-- Volunteer – Integrated Support Engineer
-Brazos Valley Psychological Association (BVPA) (2024–2025)
-Provided technical support to improve organizational operations, including website management and troubleshooting, social media optimization, and assisting in the setup of cloud-based tools such as Google Workspace.  -->
-
-
-
-    </main>
-
-    <!-- SIDEBAR -->
-    <aside class="sidebar" id="contact" aria-label="Contact and profile information">
-
-      <div class="side-card">
-        <h3>Contact</h3>
-        <div class="contact-row">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-          <a href="mailto:hasnatabdullah79@gmail.com">hasnatabdullah79@gmail.com</a>
-        </div>
-        <div class="contact-row">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-          <a href="mailto:hma18@illinois.edu">hma18@illinois.edu</a>
-        </div>
-        <div class="contact-row">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Urbana, IL 61801</span>
-        </div>
-        <!-- <div class="contact-row">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.61a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-
-        </div> -->
-        <div style="margin-top:1rem; display:flex; gap:0.5rem;">
-          <a href="https://github.com/Hasnat79" target="_blank" class="btn btn-outline" style="font-size:0.78rem; padding:0.4rem 0.9rem;">GitHub</a>
-          <a href="https://scholar.google.com/citations?user=jFgmL9wAAAAJ&hl=en" target="_blank" class="btn btn-outline" style="font-size:0.78rem; padding:0.4rem 0.9rem;">Scholar</a>
-        </div>
-      </div>
-
-      <div class="side-card">
-        <h3>Research areas</h3>
-        <div class="skills-cloud">
-          <span class="skill-chip">NLP</span>
-          <span class="skill-chip">Computer Vision</span>
-          <span class="skill-chip">Multimodal AI</span>
-          <span class="skill-chip">AI Alignment</span>
-          <span class="skill-chip">Continual Learning</span>
-          <span class="skill-chip">Livestock Genomics</span>
-          <span class="skill-chip">3D Vision</span>
-          <span class="skill-chip">Benchmarking</span>
-          <span class="skill-chip">Bias & Fairness</span>
-          <span class="skill-chip">Climate AI</span>
-          <span class="skill-chip">Disaster AI</span>
-          <span class="skill-chip">PyTorch</span>
-          <span class="skill-chip">Transformers</span>
-          <span class="skill-chip">LLMs / VLMs</span>
-        </div>
-      </div>
-
-      <div class="side-card">
-        <h3>Selected awards</h3>
-        <div class="award-item">
-          <strong>Outstanding Paper Award</strong>
-          ACL 2025 · NLP for Positive Impact Workshop
-        </div>
-        <div class="award-item">
-          <strong>2nd Place — Hackathon</strong>
-          Precision &amp; Digital Agriculture, UIUC 2026
-        </div>
-        <div class="award-item">
-          <strong>Travel Grant $1,000</strong>
-          Dept. of CSE, Texas A&M — WACV 2025
-        </div>
-        <div class="award-item">
-          <strong>Merit-Based Full Scholarship</strong>
-          Master's Program, BRAC University
-        </div>
-        <div class="award-item">
-          <strong>Vice Chancellor's List</strong>
-          BRAC University — 4 semesters
-        </div>
-      </div>
-
-      <div class="side-card">
-        <h3>References</h3>
-        <div style="font-size:0.8rem; color:var(--ink-muted); line-height:1.6;">
-          <p style="margin-bottom:0.75rem;"><strong style="color:var(--ink); display:block;">Dr. Tiago Bresolin</strong>Asst. Professor, Animal Sciences<br>UIUC · <a href="mailto:bresolin@illinois.edu">bresolin@illinois.edu</a></p>
-          <p style="margin-bottom:0.75rem;"><strong style="color:var(--ink); display:block;">Dr. Ruihong Huang</strong>Assoc. Professor, CSE<br>Texas A&amp;M · <a href="mailto:huangrh@tamu.edu">huangrh@tamu.edu</a></p>
-          <p><strong style="color:var(--ink); display:block;">Dr. Amit Sheth</strong>Professor, CSE<br>U. of South Carolina · <a href="mailto:amit@sc.edu">amit@sc.edu</a></p>
-        </div>
-      </div>
-
-    </aside>
-  </div>
-</div>
-
-<!-- ── FOOTER ── -->
-<footer>
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <!-- STATS BAR                                                     -->
+  <!-- ════════════════════════════════════════════════════════════ -->
   <div class="site-wrap">
-    <p>Hasnat Md. Abdullah · PhD Student, Animal Sciences · University of Illinois Urbana-Champaign · <a href="mailto:hasnatabdullah79@gmail.com">hasnatabdullah79@gmail.com</a></p>
+    <div class="stats-bar" role="region" aria-label="Career highlights">
+      <div class="stat-item">
+        <span class="stat-n" id="c-pub">12</span>
+        <span class="stat-label">Publications</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-n" id="c-first">5</span>
+        <span class="stat-label">First-author</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-n" id="c-oral">3</span>
+        <span class="stat-label">Oral / Spotlight</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-n" id="c-award">4+</span>
+        <span class="stat-label">Awards</span>
+      </div>
+    </div>
   </div>
-</footer>
 
-<script>
-  // Counter animation
-  document.querySelectorAll('.stat-n').forEach(el => {
-    const txt = el.textContent;
-    const num = parseInt(txt);
-    if (isNaN(num)) return;
-    let cur = 0;
-    const step = Math.max(1, Math.ceil(num / 25));
-    const t = setInterval(() => {
-      cur = Math.min(cur + step, num);
-      el.textContent = cur + (txt.includes('+') ? '+' : '');
-      if (cur >= num) clearInterval(t);
-    }, 45);
-  });
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <!-- MAIN CONTENT                                                  -->
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <div class="site-wrap">
+    <div class="body-grid">
 
-  // Timeline scroll reveal
-  const rows = document.querySelectorAll('.tl-row');
-  const io = new IntersectionObserver(entries => {
-    entries.forEach((e, i) => {
-      if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add('vis'), i * 80);
-        io.unobserve(e.target);
-      }
+      <!-- ─────────────────────────────────────────────────────── -->
+      <!-- MAIN COLUMN                                             -->
+      <!-- ─────────────────────────────────────────────────────── -->
+      <main>
+
+        <!-- NEWS SECTION -->
+        <section class="section" id="news" aria-label="Recent news">
+          <div class="section-header">
+            <h2>Recent news</h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-date">Mar 2026</div>
+            <div class="news-text">
+              <span class="badge-pill pill-award">Award</span>
+              <strong>2nd Place</strong> — Smart Livestock Track, Precision &amp; Digital Agriculture 
+              Hackathon, UIUC Center for Digital Agriculture.
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-date">Mar 2026</div>
+            <div class="news-text">
+              <span class="badge-pill pill-talk">Poster</span>
+              Poster presentation at <strong>EACL 2026</strong> — 
+              <em>GRAS: Measuring Bias in VLMs on Gender, Race, Age, and Skin Tone.</em>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-date">Jan 2026</div>
+            <div class="news-text">
+              <span class="badge-pill pill-talk">Oral</span>
+              Oral presentation at <strong>AAAI-26 Special Track on AI Alignment</strong> — 
+              <em>DETONATE</em>.
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-date">Aug 2025</div>
+            <div class="news-text">
+              <span class="badge-pill pill-talk">Spotlight</span>
+              Spotlight at <strong>KDD'25 RelKD Workshop</strong> — 
+              <em>InstaLearn: Continual Knowledge Updates for Domain Adaptation.</em>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-date">Aug 2025</div>
+            <div class="news-text">
+              <span class="badge-pill pill-edu">PhD</span>
+              Started <strong>Ph.D. in Animal Sciences</strong> at the University of Illinois Urbana-Champaign.
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-date">Jul 2025</div>
+            <div class="news-text">
+              <span class="badge-pill pill-award">Award</span>
+              <strong>Outstanding Paper Award</strong> at ACL 2025 NLP for Positive Impact Workshop — 
+              <em>CliME.</em>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-date">Feb 2025</div>
+            <div class="news-text">
+              <span class="badge-pill pill-pub">Paper</span>
+              Poster presentation at <strong>WACV 2025</strong> — 
+              <em>UALBench: The First Comprehensive Unusual Activity Localization Benchmark.</em>
+            </div>
+          </div>
+        </section>
+
+        <!-- PUBLICATIONS SECTION -->
+        <section class="section" id="publications" aria-label="Publications">
+          <div class="section-header">
+            <h2>Publications</h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="filter-bar" role="group" aria-label="Filter publications by topic">
+            <button class="ftag active" data-f="all">All (12)</button>
+            <button class="ftag" data-f="first">First author</button>
+            <button class="ftag" data-f="nlp">NLP</button>
+            <button class="ftag" data-f="cv">Computer Vision</button>
+            <button class="ftag" data-f="align">AI Alignment</button>
+            <button class="ftag" data-f="multi">Multimodal</button>
+          </div>
+
+          <div id="publist">
+
+            <!-- Publication 1 -->
+            <article class="pub-item" data-t="align multi first">
+              <div class="pub-top">
+                <span class="venue-tag vtag-align">AAAI-26</span>
+                <h3 class="pub-title">
+                  DETONATE: A Benchmark for Text-to-Image Alignment and Kernelized Direct 
+                  Preference Optimization
+                </h3>
+              </div>
+              <div class="pub-meta">
+                <span class="meta-tag meta-first">First author</span>
+                <span class="meta-tag meta-oral">Oral presentation</span>
+                <span>AI Alignment Special Track · 2026</span>
+              </div>
+            </article>
+
+            <!-- Publication 2 -->
+            <article class="pub-item" data-t="multi">
+              <div class="pub-top">
+                <span class="venue-tag vtag-multi">EACL 2026</span>
+                <h3 class="pub-title">
+                  Ask Me Again Differently: GRAS for Measuring Bias in VLMs on Gender, Race, 
+                  Age, and Skin Tone
+                </h3>
+              </div>
+              <div class="pub-meta">
+                <span>Co-author · 2026</span>
+              </div>
+            </article>
+
+            <!-- Publication 3 -->
+            <article class="pub-item" data-t="nlp multi first">
+              <div class="pub-top">
+                <span class="venue-tag vtag-nlp">ACL 2025</span>
+                <h3 class="pub-title">
+                  CliME: Evaluating Multimodal Climate Discourse on Social Media and the 
+                  Climate Alignment Quotient
+                </h3>
+              </div>
+              <div class="pub-meta">
+                <span class="meta-tag meta-first">First author</span>
+                <span class="meta-tag meta-award">Outstanding Paper Award</span>
+                <span>NLP4PI Workshop · 2025</span>
+              </div>
+            </article>
+
+            <!-- Publication 4 -->
+            <article class="pub-item" data-t="nlp first">
+              <div class="pub-top">
+                <span class="venue-tag vtag-nlp">KDD 2025</span>
+                <h3 class="pub-title">
+                  InstaLearn: Continual Knowledge Updates for Domain Adaptation
+                </h3>
+              </div>
+              <div class="pub-meta">
+                <span class="meta-tag meta-first">First author</span>
+                <span class="meta-tag meta-oral">Spotlight</span>
+                <span>RelKD Workshop · 2025</span>
+              </div>
+            </article>
+
+            <!-- Publication 5 -->
+            <article class="pub-item" data-t="nlp align">
+              <div class="pub-top">
+                <span class="venue-tag vtag-nlp">EMNLP 2025</span>
+                <h3 class="pub-title">
+                  Alignment Quality Index (AQI)
+                </h3>
+              </div>
+              <div class="pub-meta">
+                <span>Co-author · Main Conference · 2025</span>
+              </div>
+            </article>
+
+            <!-- Publication 6 -->
+            <article class="pub-item" data-t="nlp">
+              <div class="pub-top">
+                <span class="venue-tag vtag-nlp">EMNLP 2025</span>
+                <h3 class="pub-title">
+                  Mitigating Gender Bias via Fostering Exploratory Thinking in LLMs
+                </h3>
+              </div>
+              <div class="pub-meta">
+                <span>Co-author · Findings · 2025</span>
+              </div>
+            </article>
+
+            <!-- Publication 7 -->
+            <article class="pub-item" data-t="cv first">
+              <div class="pub-top">
+                <span class="venue-tag vtag-cv">WACV 2025</span>
+                <h3 class="pub-title">
+                  UALBench: The First Comprehensive Unusual Activity Localization Benchmark
+                </h3>
+              </div>
+              <div class="pub-meta">
+                <span class="meta-tag meta-first">First author</span>
+                <span>2025</span>
+              </div>
+            </article>
+
+            <!-- Publication 8 -->
+            <article class="pub-item" data-t="cv">
+              <div class="pub-top">
+                <span class="venue-tag vtag-cv">IEEE RO-MAN 2025</span>
+                <h3 class="pub-title">
+                  Non-Uniform Spatial Alignment Errors in sUAS Imagery From Wide-Area Disasters
+                </h3>
+              </div>
+              <div class="pub-meta">
+                <span>Co-author · 2025</span>
+              </div>
+            </article>
+
+            <!-- Publication 9 -->
+            <article class="pub-item" data-t="multi nlp">
+              <div class="pub-top">
+                <span class="venue-tag vtag-multi">AACL 2025</span>
+                <h3 class="pub-title">
+                  Visual Counter Turing Test (VCT²)
+                </h3>
+              </div>
+              <div class="pub-meta">
+                <span>Co-author · IJCNLP-AACL · 2025</span>
+              </div>
+            </article>
+
+            <!-- Publication 10 -->
+            <article class="pub-item" data-t="multi">
+              <div class="pub-top">
+                <span class="venue-tag vtag-multi">Springer 2023</span>
+                <h3 class="pub-title">
+                  Affective Social Anthropomorphic Intelligent System
+                </h3>
+              </div>
+              <div class="pub-meta">
+                <span>Co-author · Multimedia Tools &amp; Applications (Q1) · 2023</span>
+              </div>
+            </article>
+
+            <!-- Publication 11 -->
+            <article class="pub-item" data-t="cv">
+              <div class="pub-top">
+                <span class="venue-tag vtag-cv">IICAIET 2022</span>
+                <h3 class="pub-title">
+                  SynthEnsemble: A Fusion of CNN, Vision Transformer, and Hybrid Models for 
+                  Chest X-Ray Classification
+                </h3>
+              </div>
+              <div class="pub-meta">
+                <span>Co-author · IEEE · 2022</span>
+              </div>
+            </article>
+
+            <!-- Publication 12 -->
+            <article class="pub-item" data-t="cv">
+              <div class="pub-top">
+                <span class="venue-tag vtag-cv">IICAIET 2022</span>
+                <h3 class="pub-title">
+                  A Comparative Analysis of Lumpy Skin Disease Prediction through ML Approaches
+                </h3>
+              </div>
+              <div class="pub-meta">
+                <span>Co-author · IEEE · 2022</span>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- JOURNEY SECTION -->
+        <section class="section" id="journey" aria-label="Academic and professional journey">
+          <div class="section-header">
+            <h2>Journey</h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="tl">
+
+            <div class="tl-row">
+              <div class="tl-dot dot-edu">🎓</div>
+              <div class="tl-content">
+                <div class="tl-when">Aug 2025 – present</div>
+                <div class="tl-what">Ph.D. in Animal Sciences · University of Illinois Urbana-Champaign</div>
+                <div class="tl-where">Advisor: Dr. Tiago Bresolin · AI + Livestock Genomics · Precision Agriculture</div>
+              </div>
+            </div>
+
+            <div class="tl-row">
+              <div class="tl-dot dot-work">🔬</div>
+              <div class="tl-content">
+                <div class="tl-when">May – Jul 2025</div>
+                <div class="tl-what">Research Intern · AIISC Lab, University of South Carolina</div>
+                <div class="tl-where">Encoder-free VLMs · Compact enterprise SLMs · Advisors: Dr. Amit Sheth, Dr. Amitava Das</div>
+              </div>
+            </div>
+
+            <div class="tl-row">
+              <div class="tl-dot dot-edu">🎓</div>
+              <div class="tl-content">
+                <div class="tl-when">Jan 2023 – May 2025</div>
+                <div class="tl-what">M.S. Computer Science · Texas A&M University</div>
+                <div class="tl-where">Advisor: Dr. Ruihong Huang · NLP · Deep Learning · Generative AI</div>
+              </div>
+            </div>
+
+            <div class="tl-row">
+              <div class="tl-dot dot-work">💼</div>
+              <div class="tl-content">
+                <div class="tl-when">Mar 2024 – July 2025</div>
+                <div class="tl-what">Volunteer · Brazos Valley Psychological Association (BVPA)</div>
+                <div class="tl-where">Integrated Support Engineer</div>
+              </div>
+            </div>
+
+            <div class="tl-row">
+              <div class="tl-dot dot-work">💼</div>
+              <div class="tl-content">
+                <div class="tl-when">Jan 2024 – May 2025</div>
+                <div class="tl-what">Graduate Teaching Assistant · Texas A&M University</div>
+                <div class="tl-where">Artificial Intelligence · Database Systems</div>
+              </div>
+            </div>
+
+            <div class="tl-row">
+              <div class="tl-dot dot-work">💼</div>
+              <div class="tl-content">
+                <div class="tl-when">Jan 2024 – Aug 2025</div>
+                <div class="tl-what">Research Collaborator · Humanitarian Robotics and AI Lab, TAMU</div>
+                <div class="tl-where">PI: Prof. Robin Murphy · Building/road damage assessment · sUAS imagery</div>
+              </div>
+            </div>
+
+            <div class="tl-row">
+              <div class="tl-dot dot-work">💼</div>
+              <div class="tl-content">
+                <div class="tl-when">Jan 2025 – Aug 2025</div>
+                <div class="tl-what">Research Collaborator · IDRT</div>
+                <div class="tl-where">PI: Dr. Jooho Kim · Community structure for disaster impact predictions</div>
+              </div>
+            </div>
+
+            <div class="tl-row">
+              <div class="tl-dot dot-work">💼</div>
+              <div class="tl-content">
+                <div class="tl-when">Aug 2021 – Dec 2022</div>
+                <div class="tl-what">Lecturer · BRAC University</div>
+                <div class="tl-where">Programming Language I · Algorithm Analysis &amp; Design</div>
+              </div>
+            </div>
+
+            <div class="tl-row">
+              <div class="tl-dot dot-edu">🎓</div>
+              <div class="tl-content">
+                <div class="tl-when">Jan 2017 – Dec 2020</div>
+                <div class="tl-what">B.Sc. Computer Science · BRAC University, Dhaka</div>
+                <div class="tl-where">In-major CGPA: 3.87 · Merit scholarship · Vice Chancellor's List</div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+
+      <!-- ─────────────────────────────────────────────────────── -->
+      <!-- SIDEBAR                                                  -->
+      <!-- ─────────────────────────────────────────────────────── -->
+      <aside class="sidebar" id="contact" aria-label="Contact and profile information">
+
+        <!-- Contact Card -->
+        <div class="side-card">
+          <h3>Contact</h3>
+          
+          <div class="contact-row">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,12 2,6"/>
+            </svg>
+            <a href="mailto:hasnatabdullah79@gmail.com">hasnatabdullah79@gmail.com</a>
+          </div>
+          
+          <div class="contact-row">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,12 2,6"/>
+            </svg>
+            <a href="mailto:hma18@illinois.edu">hma18@illinois.edu</a>
+          </div>
+          
+          <div class="contact-row">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Urbana, IL 61801</span>
+          </div>
+
+          <div style="margin-top:1rem; display:flex; gap:0.5rem;">
+            <a href="https://github.com/Hasnat79" target="_blank" class="btn btn-outline" style="font-size:0.78rem; padding:0.4rem 0.9rem;">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=jFgmL9wAAAAJ&hl=en" target="_blank" class="btn btn-outline" style="font-size:0.78rem; padding:0.4rem 0.9rem;">Scholar</a>
+          </div>
+        </div>
+
+        <!-- Research Areas Card -->
+        <div class="side-card">
+          <h3>Research areas</h3>
+          <div class="skills-cloud">
+            <span class="skill-chip">NLP</span>
+            <span class="skill-chip">Computer Vision</span>
+            <span class="skill-chip">Multimodal AI</span>
+            <span class="skill-chip">AI Alignment</span>
+            <span class="skill-chip">Continual Learning</span>
+            <span class="skill-chip">Livestock Genomics</span>
+            <span class="skill-chip">3D Vision</span>
+            <span class="skill-chip">Benchmarking</span>
+            <span class="skill-chip">Bias & Fairness</span>
+            <span class="skill-chip">Climate AI</span>
+            <span class="skill-chip">Disaster AI</span>
+            <span class="skill-chip">PyTorch</span>
+            <span class="skill-chip">Transformers</span>
+            <span class="skill-chip">LLMs / VLMs</span>
+          </div>
+        </div>
+
+        <!-- Awards Card -->
+        <div class="side-card">
+          <h3>Selected awards</h3>
+          
+          <div class="award-item">
+            <strong>Outstanding Paper Award</strong>
+            ACL 2025 · NLP for Positive Impact Workshop
+          </div>
+          
+          <div class="award-item">
+            <strong>2nd Place — Hackathon</strong>
+            Precision &amp; Digital Agriculture, UIUC 2026
+          </div>
+          
+          <div class="award-item">
+            <strong>Travel Grant $1,000</strong>
+            Dept. of CSE, Texas A&M — WACV 2025
+          </div>
+          
+          <div class="award-item">
+            <strong>Merit-Based Full Scholarship</strong>
+            Master's Program, BRAC University
+          </div>
+          
+          <div class="award-item">
+            <strong>Vice Chancellor's List</strong>
+            BRAC University — 4 semesters
+          </div>
+        </div>
+
+        <!-- References Card -->
+        <div class="side-card">
+          <h3>References</h3>
+          <div style="font-size:0.8rem; color:var(--ink-muted); line-height:1.6;">
+            
+            <p style="margin-bottom:0.75rem;">
+              <strong style="color:var(--ink); display:block;">Dr. Tiago Bresolin</strong>
+              Asst. Professor, Animal Sciences<br>
+              UIUC · <a href="mailto:bresolin@illinois.edu">bresolin@illinois.edu</a>
+            </p>
+            
+            <p style="margin-bottom:0.75rem;">
+              <strong style="color:var(--ink); display:block;">Dr. Ruihong Huang</strong>
+              Assoc. Professor, CSE<br>
+              Texas A&amp;M · <a href="mailto:huangrh@tamu.edu">huangrh@tamu.edu</a>
+            </p>
+            
+            <p>
+              <strong style="color:var(--ink); display:block;">Dr. Amit Sheth</strong>
+              Professor, CSE<br>
+              U. of South Carolina · <a href="mailto:amit@sc.edu">amit@sc.edu</a>
+            </p>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <!-- FOOTER                                                        -->
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="site-wrap">
+      <p>
+        Hasnat Md. Abdullah · PhD Student, Animal Sciences · 
+        University of Illinois Urbana-Champaign · 
+        <a href="mailto:hasnatabdullah79@gmail.com">hasnatabdullah79@gmail.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <!-- JAVASCRIPT                                                    -->
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <script>
+    // Counter animation for stats
+    document.querySelectorAll('.stat-n').forEach(el => {
+      const txt = el.textContent;
+      const num = parseInt(txt);
+      if (isNaN(num)) return;
+      
+      let cur = 0;
+      const step = Math.max(1, Math.ceil(num / 25));
+      const t = setInterval(() => {
+        cur = Math.min(cur + step, num);
+        el.textContent = cur + (txt.includes('+') ? '+' : '');
+        if (cur >= num) clearInterval(t);
+      }, 45);
     });
-  }, { threshold: 0.15 });
-  rows.forEach(r => io.observe(r));
 
-  // Publication filter
-  document.querySelector('.filter-bar').addEventListener('click', e => {
-    const btn = e.target.closest('.ftag');
-    if (!btn) return;
-    document.querySelectorAll('.ftag').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const f = btn.dataset.f;
-    document.querySelectorAll('.pub-item').forEach(p => {
-      const tags = p.dataset.t || '';
-      p.classList.toggle('hidden', f !== 'all' && !tags.split(' ').includes(f));
+    // Timeline scroll reveal
+    const rows = document.querySelectorAll('.tl-row');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('vis'), i * 80);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    rows.forEach(r => io.observe(r));
+
+    // Publication filter
+    document.querySelector('.filter-bar').addEventListener('click', e => {
+      const btn = e.target.closest('.ftag');
+      if (!btn) return;
+      
+      document.querySelectorAll('.ftag').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      const f = btn.dataset.f;
+      document.querySelectorAll('.pub-item').forEach(p => {
+        const tags = p.dataset.t || '';
+        p.classList.toggle('hidden', f !== 'all' && !tags.split(' ').includes(f));
+      });
     });
-  });
-</script>
+  </script>
 
 </body>
 </html>
