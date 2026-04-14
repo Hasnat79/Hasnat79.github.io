@@ -1,0 +1,440 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font-sans); }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-tertiary);
+    margin-bottom: 1rem;
+  }
+
+  /* STATS */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 2.5rem;
+  }
+  .stat-card {
+    background: var(--color-background-secondary);
+    border-radius: var(--border-radius-md);
+    padding: 1rem;
+    text-align: center;
+  }
+  .stat-num {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    display: block;
+  }
+  .stat-label {
+    font-size: 11px;
+    color: var(--color-text-secondary);
+    margin-top: 4px;
+    line-height: 1.4;
+  }
+
+  /* TIMELINE */
+  .timeline { position: relative; margin-bottom: 2.5rem; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 8px;
+    bottom: 8px;
+    width: 1.5px;
+    background: var(--color-border-tertiary);
+  }
+  .tl-item {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 1.25rem;
+    opacity: 0;
+    transform: translateX(-12px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+  }
+  .tl-item.visible { opacity: 1; transform: translateX(0); }
+  .tl-dot {
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    position: relative;
+    z-index: 1;
+  }
+  .tl-dot.edu { background: #EAF3DE; color: #3B6D11; }
+  .tl-dot.work { background: #E6F1FB; color: #185FA5; }
+  .tl-dot.award { background: #FAEEDA; color: #854F0B; }
+  .tl-body { flex: 1; padding-top: 4px; }
+  .tl-date { font-size: 11px; color: var(--color-text-tertiary); margin-bottom: 2px; }
+  .tl-title { font-size: 14px; font-weight: 500; color: var(--color-text-primary); }
+  .tl-sub { font-size: 12px; color: var(--color-text-secondary); margin-top: 2px; }
+
+  /* PUBLICATIONS */
+  .filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 1.25rem;
+  }
+  .filter-btn {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 99px;
+    border: 0.5px solid var(--color-border-secondary);
+    background: var(--color-background-primary);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+  .filter-btn.active {
+    background: var(--color-background-secondary);
+    color: var(--color-text-primary);
+    border-color: var(--color-border-primary);
+  }
+  .pub-card {
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: var(--border-radius-lg);
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    transition: opacity 0.2s;
+  }
+  .pub-card.hidden { display: none; }
+  .pub-header { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 6px; }
+  .pub-badge {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 99px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .badge-nlp { background: #E1F5EE; color: #0F6E56; }
+  .badge-cv { background: #E6F1FB; color: #185FA5; }
+  .badge-align { background: #FBEAF0; color: #993556; }
+  .badge-multi { background: #FAEEDA; color: #854F0B; }
+  .badge-other { background: #F1EFE8; color: #5F5E5A; }
+  .pub-title { font-size: 13px; font-weight: 500; color: var(--color-text-primary); line-height: 1.4; }
+  .pub-meta { font-size: 11px; color: var(--color-text-secondary); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .first-author-tag {
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: #EAF3DE;
+    color: #3B6D11;
+    font-weight: 500;
+  }
+  .award-tag {
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: #FAEEDA;
+    color: #854F0B;
+    font-weight: 500;
+  }
+
+  @media (max-width: 480px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+
+<h2 class="sr-only">Hasnat Md. Abdullah — interactive research profile with stats, timeline, and publications</h2>
+
+<div style="padding: 1rem 0;">
+
+  <!-- STATS -->
+  <p class="section-label">At a glance</p>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <span class="stat-num" data-target="12" data-suffix="">0</span>
+      <span class="stat-label">Publications</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" data-target="5" data-suffix="">0</span>
+      <span class="stat-label">First-author papers</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" data-target="3" data-suffix="">0</span>
+      <span class="stat-label">Oral presentations</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" data-target="4" data-suffix="">0</span>
+      <span class="stat-label">Awards &amp; honors</span>
+    </div>
+  </div>
+
+  <!-- TIMELINE -->
+  <p class="section-label">Journey</p>
+  <div class="timeline" id="timeline">
+
+    <div class="tl-item" data-delay="0">
+      <div class="tl-dot edu">🎓</div>
+      <div class="tl-body">
+        <div class="tl-date">2017 – 2020</div>
+        <div class="tl-title">B.Sc. Computer Science · BRAC University</div>
+        <div class="tl-sub">In-major CGPA 3.87 · Merit scholarship · Vice Chancellor's List</div>
+      </div>
+    </div>
+
+    <div class="tl-item" data-delay="80">
+      <div class="tl-dot work">💼</div>
+      <div class="tl-body">
+        <div class="tl-date">2021 – 2022</div>
+        <div class="tl-title">Lecturer · BRAC University</div>
+        <div class="tl-sub">Programming Language I · Algorithm Analysis &amp; Design</div>
+      </div>
+    </div>
+
+    <div class="tl-item" data-delay="160">
+      <div class="tl-dot edu">🎓</div>
+      <div class="tl-body">
+        <div class="tl-date">2023 – 2025</div>
+        <div class="tl-title">M.S. Computer Science · Texas A&amp;M University</div>
+        <div class="tl-sub">Advised by Dr. Ruihong Huang · NLP, Deep Learning, Generative AI</div>
+      </div>
+    </div>
+
+    <div class="tl-item" data-delay="240">
+      <div class="tl-dot work">💼</div>
+      <div class="tl-body">
+        <div class="tl-date">2024 – 2025</div>
+        <div class="tl-title">Graduate TA · Texas A&amp;M</div>
+        <div class="tl-sub">Artificial Intelligence · Database Systems</div>
+      </div>
+    </div>
+
+    <div class="tl-item" data-delay="320">
+      <div class="tl-dot award">🏅</div>
+      <div class="tl-body">
+        <div class="tl-date">Feb 2025</div>
+        <div class="tl-title">WACV 2025 · UALBench — Poster Presentation</div>
+        <div class="tl-sub">Travel grant recipient ($1,000)</div>
+      </div>
+    </div>
+
+    <div class="tl-item" data-delay="400">
+      <div class="tl-dot award">🏆</div>
+      <div class="tl-body">
+        <div class="tl-date">Jul 2025</div>
+        <div class="tl-title">Outstanding Paper Award · ACL 2025 NLP4PI Workshop</div>
+        <div class="tl-sub">CliME: Evaluating Multimodal Climate Discourse</div>
+      </div>
+    </div>
+
+    <div class="tl-item" data-delay="480">
+      <div class="tl-dot work">💼</div>
+      <div class="tl-body">
+        <div class="tl-date">May – Jul 2025</div>
+        <div class="tl-title">Research Intern · AIISC Lab, U. of South Carolina</div>
+        <div class="tl-sub">Encoder-free VLMs · compact SLMs · Advised by Dr. Amit Sheth</div>
+      </div>
+    </div>
+
+    <div class="tl-item" data-delay="560">
+      <div class="tl-dot edu">🎓</div>
+      <div class="tl-body">
+        <div class="tl-date">Aug 2025 – present</div>
+        <div class="tl-title">Ph.D. Animal Sciences · UIUC</div>
+        <div class="tl-sub">Advised by Dr. Tiago Bresolin · AI + Livestock Genomics</div>
+      </div>
+    </div>
+
+    <div class="tl-item" data-delay="640">
+      <div class="tl-dot award">🥈</div>
+      <div class="tl-body">
+        <div class="tl-date">Jan 2026</div>
+        <div class="tl-title">Oral Presentation · AAAI-26 · DETONATE</div>
+        <div class="tl-sub">AI Alignment Special Track</div>
+      </div>
+    </div>
+
+    <div class="tl-item" data-delay="720">
+      <div class="tl-dot award">🏆</div>
+      <div class="tl-body">
+        <div class="tl-date">Mar 2026</div>
+        <div class="tl-title">2nd Place · Precision &amp; Digital Agriculture Hackathon · UIUC</div>
+        <div class="tl-sub">Smart Livestock Track · Center for Digital Agriculture</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PUBLICATIONS -->
+  <p class="section-label">Publications</p>
+  <div class="filter-row" id="filters">
+    <button class="filter-btn active" data-filter="all">All (12)</button>
+    <button class="filter-btn" data-filter="nlp">NLP</button>
+    <button class="filter-btn" data-filter="cv">Computer Vision</button>
+    <button class="filter-btn" data-filter="align">AI Alignment</button>
+    <button class="filter-btn" data-filter="multi">Multimodal</button>
+    <button class="filter-btn" data-filter="first">First author only</button>
+  </div>
+
+  <div id="pub-list">
+    <div class="pub-card" data-tags="align multi first">
+      <div class="pub-header">
+        <span class="pub-badge badge-align">AAAI-26</span>
+        <span class="pub-title">DETONATE: A Benchmark for Text-to-Image Alignment and Kernelized Direct Preference Optimization</span>
+      </div>
+      <div class="pub-meta">
+        <span class="first-author-tag">First author</span>
+        <span class="award-tag">Oral presentation</span>
+        <span>AI Alignment Special Track · 2026</span>
+      </div>
+    </div>
+
+    <div class="pub-card" data-tags="multi">
+      <div class="pub-header">
+        <span class="pub-badge badge-multi">EACL 2026</span>
+        <span class="pub-title">Ask Me Again Differently: GRAS for Measuring Bias in VLMs on Gender, Race, Age, and Skin Tone</span>
+      </div>
+      <div class="pub-meta"><span>Co-author · 2026</span></div>
+    </div>
+
+    <div class="pub-card" data-tags="nlp multi first">
+      <div class="pub-header">
+        <span class="pub-badge badge-nlp">ACL 2025</span>
+        <span class="pub-title">CliME: Evaluating Multimodal Climate Discourse on Social Media and the Climate Alignment Quotient</span>
+      </div>
+      <div class="pub-meta">
+        <span class="first-author-tag">First author</span>
+        <span class="award-tag">Outstanding Paper Award</span>
+        <span>NLP4PI Workshop · 2025</span>
+      </div>
+    </div>
+
+    <div class="pub-card" data-tags="nlp first">
+      <div class="pub-header">
+        <span class="pub-badge badge-nlp">KDD 2025</span>
+        <span class="pub-title">InstaLearn: Continual Knowledge Updates for Domain Adaptation</span>
+      </div>
+      <div class="pub-meta">
+        <span class="first-author-tag">First author</span>
+        <span class="award-tag">Spotlight</span>
+        <span>RelKD Workshop · 2025</span>
+      </div>
+    </div>
+
+    <div class="pub-card" data-tags="nlp align">
+      <div class="pub-header">
+        <span class="pub-badge badge-nlp">EMNLP 2025</span>
+        <span class="pub-title">Alignment Quality Index (AQI)</span>
+      </div>
+      <div class="pub-meta"><span>Co-author · Main Conference · 2025</span></div>
+    </div>
+
+    <div class="pub-card" data-tags="nlp">
+      <div class="pub-header">
+        <span class="pub-badge badge-nlp">EMNLP 2025</span>
+        <span class="pub-title">Mitigating Gender Bias via Fostering Exploratory Thinking in LLMs</span>
+      </div>
+      <div class="pub-meta"><span>Co-author · Findings · 2025</span></div>
+    </div>
+
+    <div class="pub-card" data-tags="cv first">
+      <div class="pub-header">
+        <span class="pub-badge badge-cv">WACV 2025</span>
+        <span class="pub-title">UALBench: The First Comprehensive Unusual Activity Localization Benchmark</span>
+      </div>
+      <div class="pub-meta">
+        <span class="first-author-tag">First author</span>
+        <span>2025</span>
+      </div>
+    </div>
+
+    <div class="pub-card" data-tags="cv">
+      <div class="pub-header">
+        <span class="pub-badge badge-cv">IEEE RO-MAN 2025</span>
+        <span class="pub-title">Non-Uniform Spatial Alignment Errors in sUAS Imagery From Wide-Area Disasters</span>
+      </div>
+      <div class="pub-meta"><span>Co-author · 2025</span></div>
+    </div>
+
+    <div class="pub-card" data-tags="multi nlp">
+      <div class="pub-header">
+        <span class="pub-badge badge-multi">AACL 2025</span>
+        <span class="pub-title">Visual Counter Turing Test (VCT²)</span>
+      </div>
+      <div class="pub-meta"><span>Co-author · IJCNLP-AACL · 2025</span></div>
+    </div>
+
+    <div class="pub-card" data-tags="multi">
+      <div class="pub-header">
+        <span class="pub-badge badge-multi">Springer 2023</span>
+        <span class="pub-title">Affective Social Anthropomorphic Intelligent System</span>
+      </div>
+      <div class="pub-meta"><span>Co-author · Multimedia Tools &amp; Applications (Q1) · 2023</span></div>
+    </div>
+
+    <div class="pub-card" data-tags="cv">
+      <div class="pub-header">
+        <span class="pub-badge badge-cv">IICAIET 2022</span>
+        <span class="pub-title">SynthEnsemble: A Fusion of CNN, Vision Transformer, and Hybrid Models for Chest X-Ray Classification</span>
+      </div>
+      <div class="pub-meta"><span>Co-author · IEEE · 2022</span></div>
+    </div>
+
+    <div class="pub-card" data-tags="cv">
+      <div class="pub-header">
+        <span class="pub-badge badge-cv">IICAIET 2022</span>
+        <span class="pub-title">A Comparative Analysis of Lumpy Skin Disease Prediction through ML Approaches</span>
+      </div>
+      <div class="pub-meta"><span>Co-author · IEEE · 2022</span></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // --- Animated counters ---
+  const counters = document.querySelectorAll('[data-target]');
+  let counted = false;
+  function runCounters() {
+    if (counted) return; counted = true;
+    counters.forEach(el => {
+      const target = parseInt(el.dataset.target);
+      const suffix = el.dataset.suffix || '';
+      let cur = 0;
+      const step = Math.ceil(target / 30);
+      const timer = setInterval(() => {
+        cur = Math.min(cur + step, target);
+        el.textContent = cur + suffix;
+        if (cur >= target) clearInterval(timer);
+      }, 40);
+    });
+  }
+
+  // --- Timeline animations ---
+  const items = document.querySelectorAll('.tl-item');
+  setTimeout(() => {
+    items.forEach(item => {
+      const delay = parseInt(item.dataset.delay) || 0;
+      setTimeout(() => item.classList.add('visible'), delay);
+    });
+    runCounters();
+  }, 200);
+
+  // --- Publication filter ---
+  document.getElementById('filters').addEventListener('click', e => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    document.querySelectorAll('.pub-card').forEach(card => {
+      const tags = card.dataset.tags || '';
+      const show = f === 'all' || tags.split(' ').includes(f);
+      card.classList.toggle('hidden', !show);
+    });
+  });
+</script>
