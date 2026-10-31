@@ -541,6 +541,11 @@
       color: var(--accent);
     }
 
+    .meta-review {
+      background: var(--blue-soft);
+      color: var(--blue);
+    }
+
     /* ════════════════════════════════════════════════════════════ */
     /* TIMELINE                                                      */
     /* ════════════════════════════════════════════════════════════ */
@@ -918,6 +923,24 @@
           </div>
 
           <div class="news-item">
+            <div class="news-date">Oct 2026</div>
+            <div class="news-text">
+              <span class="badge-pill pill-pub">Research</span>
+              First-author manuscript on <strong>New World Screwworm outbreak-risk prediction</strong>
+              and sterile fly release planning is under review at the <em>Journal of Animal Science</em>.
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-date">Oct 2026</div>
+            <div class="news-text">
+              <span class="badge-pill pill-pub">Research</span>
+              First-author manuscript on <strong>cattle body segmentation</strong>, depth-image encoding,
+              and temporal domain shift is under review at <em>Computers and Electronics in Agriculture</em>.
+            </div>
+          </div>
+
+          <div class="news-item">
             <div class="news-date"> Nov 2026</div>
             <div class="news-text">
               <span class="badge-pill pill-pub">Cybersecurity</span>
@@ -1083,15 +1106,48 @@
           <p><a href="/publications/">View the complete publication list with paper links →</a></p>
 
           <div class="filter-bar" role="group" aria-label="Filter publications by topic">
-            <button class="ftag active" data-f="all">All (12)</button>
+            <button class="ftag active" data-f="all">All (14)</button>
             <button class="ftag" data-f="first">First author</button>
             <button class="ftag" data-f="nlp">NLP</button>
             <button class="ftag" data-f="cv">Computer Vision</button>
             <button class="ftag" data-f="align">AI Alignment</button>
             <button class="ftag" data-f="multi">Multimodal</button>
+            <button class="ftag" data-f="disease">Disease Surveillance</button>
+            <button class="ftag" data-f="precision">Precision Livestock Farming</button>
+            <button class="ftag" data-f="review">Under review</button>
           </div>
 
           <div id="publist">
+
+            <!-- Manuscript 1 -->
+            <article class="pub-item" data-t="first disease review">
+              <div class="pub-top">
+                <span class="venue-tag vtag-cv">Disease Surveillance</span>
+                <h3 class="pub-title">
+                  A spatiotemporal GNN for predicting New World Screwworm outbreak risk and informing sterile fly release
+                </h3>
+              </div>
+              <div class="pub-meta">
+                <span class="meta-tag meta-first">First author</span>
+                <span class="meta-tag meta-review">Under review</span>
+                <span>Journal of Animal Science · 2026</span>
+              </div>
+            </article>
+
+            <!-- Manuscript 2 -->
+            <article class="pub-item" data-t="first cv precision review">
+              <div class="pub-top">
+                <span class="venue-tag vtag-cv">Precision Livestock Farming</span>
+                <h3 class="pub-title">
+                  Evaluating the Impact of Depth Image Encoding and Temporal Domain Shift on Cattle Body Segmentation
+                </h3>
+              </div>
+              <div class="pub-meta">
+                <span class="meta-tag meta-first">First author</span>
+                <span class="meta-tag meta-review">Under review</span>
+                <span>Computers and Electronics in Agriculture · 2026</span>
+              </div>
+            </article>
 
             <!-- Publication 1 -->
             <article class="pub-item" data-t="align multi first">
