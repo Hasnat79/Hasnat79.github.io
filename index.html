@@ -740,6 +740,33 @@
       padding-left: 1.2rem;
     }
 
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .research-card {
+      padding: 1rem;
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .research-card h3 {
+      margin: 0 0 0.4rem;
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+
+    .research-card p {
+      margin: 0;
+      color: var(--ink-muted);
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
+
     /* ════════════════════════════════════════════════════════════ */
     /* RESPONSIVE DESIGN                                             */
     /* ════════════════════════════════════════════════════════════ */
@@ -773,6 +800,10 @@
         position: static;
       }
 
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+
     }
   </style>
 </head>
@@ -785,9 +816,11 @@
     <div class="site-wrap">
       <span class="nav-name">Hasnat Md. Abdullah</span>
       <ul class="nav-links">
+        <li><a href="#research">Research</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#publications">Publications</a></li>
-        <li><a href="#journey">Journey</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="/assets/files/resume.pdf">CV</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -799,18 +832,19 @@
   <div class="site-wrap">
     <header class="hero" role="banner">
       <div>
-        <p class="hero-eyebrow">AI Researcher · PhD Student at UIUC</p>
+        <p class="hero-eyebrow">Industrial AI Agents · PhD Student at UIUC</p>
         <h1>Hasnat Md.<br>Abdullah</h1>
         
         <p class="hero-bio">
-          I build <strong>AI systems that bridge machine learning and livestock science</strong>, 
-          using 3D computer vision and SNP genomics to automate cattle phenotyping at scale. 
-          Previously at <strong>Texas A&M</strong> (M.S. CS) and <strong>AIISC, University of South Carolina</strong>, 
-          I worked on multimodal LLMs, AI alignment, and NLP for social good.
+          I develop <strong>context-specific AI agents for complex industrial systems</strong>.
+          My current research applies this vision to livestock genomics and precision agriculture,
+          combining SNP data, 3D computer vision, and digital phenotyping to support sustainable beef production.
+          Previously at <strong>Texas A&amp;M</strong> and <strong>AIISC, University of South Carolina</strong>,
+          I worked on multimodal models, AI alignment, and NLP for social good.
         </p>
         
         <p class="hero-bio" style="font-size:0.88rem; color: var(--ink-muted); margin-bottom: 1.5rem;">
-          12 published papers · 2 manuscripts under review · AAAI · ACL · EMNLP · WACV
+          AI agents · Livestock genomics · 3D vision · Bioinformatics · Cybersecurity
         </p>
 
         <div class="cta-row">
@@ -974,27 +1008,42 @@
         </section>
 
         <!-- RESEARCH VISION SECTION -->
-        <section class="section" id="research" aria-label="Research vision">
+        <section class="section" id="research" aria-label="Research program">
           <div class="section-header">
-            <h2>Research vision</h2>
+            <h2>Research program</h2>
             <div class="section-line"></div>
           </div>
           <p>
-            I develop AI-powered precision livestock systems that connect genotype, phenotype, imagery,
-            and producer decisions. My current work combines SNP genotypes with 3D computer vision to
-            measure cattle traits at scale and support more sustainable beef production.
+            My long-term research goal is to develop agents that are designed for the context in which
+            they operate. These systems should connect domain knowledge, data, tools, and operational
+            decisions rather than act as generic chat interfaces.
           </p>
           <p>
-            My broader vision is to develop context-specific agents for industrial settings. These agents
-            could support beef production, bioinformatics, manufacturing, or other complex environments
-            where domain knowledge, data, and operational decisions need to work together.
+            My current application is AI-powered precision livestock: combining SNP genotypes, 3D computer
+            vision, and digital phenotyping to measure cattle traits at scale and support sustainable beef
+            production. This work provides a concrete foundation for broader applications in bioinformatics,
+            manufacturing, and other complex industrial environments.
           </p>
+          <div class="research-grid">
+            <article class="research-card">
+              <h3>Context-specific agents</h3>
+              <p>Agents grounded in the data, workflows, constraints, and decisions of a specific industrial setting.</p>
+            </article>
+            <article class="research-card">
+              <h3>Livestock and agriculture</h3>
+              <p>Genomics, 3D vision, and digital phenotyping for measurable value in sustainable beef production.</p>
+            </article>
+            <article class="research-card">
+              <h3>Trustworthy deployment</h3>
+              <p>Exploring alignment, cybersecurity, reliability, and evaluation for agents used in real operations.</p>
+            </article>
+          </div>
         </section>
 
         <!-- TEACHING AND SERVICE SECTION -->
-        <section class="section" id="teaching" aria-label="Teaching and service">
+        <section class="section" id="teaching" aria-label="Teaching">
           <div class="section-header">
-            <h2>Teaching &amp; service</h2>
+            <h2>Teaching</h2>
             <div class="section-line"></div>
           </div>
           <p>
@@ -1005,8 +1054,24 @@
           <ul class="compact-list">
             <li>Graduate Teaching Assistant, Texas A&amp;M University: Artificial Intelligence and Database Systems.</li>
             <li>Contractual Lecturer, BRAC University: Programming Language I and Algorithm Analysis &amp; Design.</li>
-            <li>Reviewer for NLP and multimodal AI venues.</li>
           </ul>
+        </section>
+
+        <!-- SERVICE AND COLLABORATION SECTION -->
+        <section class="section" id="service" aria-label="Academic service and collaboration">
+          <div class="section-header">
+            <h2>Service &amp; collaboration</h2>
+            <div class="section-line"></div>
+          </div>
+          <p>
+            I review for NLP and multimodal AI venues and welcome collaborations with researchers and
+            practitioners working on AI agents, genomics, animal science, computer vision, cybersecurity,
+            and industrial decision-support systems.
+          </p>
+          <p>
+            I am especially interested in research collaboration, industry partnerships, and mentoring
+            students who want to apply AI to high-impact scientific or operational problems.
+          </p>
         </section>
 
         <!-- PUBLICATIONS SECTION -->
