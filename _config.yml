@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Hasnat Md. Abdullah"
   avatar           : "images/curt.jpg"
-  bio              : "Ph.D. Student, Animal Sciences<br>University of Illinois Urbana-Champaign"
+  bio              : "Ph.D. Student, Animal Sciences<br>AI, Genetics &amp; Precision Livestock"
   location         : "Urbana, IL, USA"
   employer         :
   pubmed           :
@@ -43,7 +43,7 @@ author:
   instagram        :
   impactstory      :
   lastfm           :
-  linkedin         :
+  linkedin         : "hasnat-md-abdullah"
   dblp             :
   orcid            :
   pinterest        :

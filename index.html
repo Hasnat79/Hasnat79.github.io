@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hasnat Md. Abdullah — AI Researcher | PhD Student at UIUC</title>
-  <meta name="description" content="Hasnat Md. Abdullah is a PhD student in Animal Sciences at UIUC, bridging AI and livestock genomics. 12 publications including AAAI, ACL, EMNLP, WACV. Expert in NLP, Computer Vision, Multimodal AI.">
-  <meta name="keywords" content="Hasnat Abdullah, AI researcher, NLP, computer vision, multimodal AI, livestock genomics, UIUC, Texas A&M, deep learning, machine learning, PhD student">
+  <meta name="description" content="Hasnat Md. Abdullah is a PhD student in Animal Sciences at UIUC developing AI-powered precision livestock systems that combine genetics, 3D computer vision, and digital phenotyping.">
+  <meta name="keywords" content="Hasnat Abdullah, precision livestock, livestock genomics, 3D computer vision, digital phenotyping, AI, UIUC, Texas A&M, deep learning, PhD student">
   <meta name="author" content="Hasnat Md. Abdullah">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Hasnat Md. Abdullah — AI Researcher">
-  <meta property="og:description" content="PhD student at UIUC bridging AI & livestock genomics. 12 publications · AAAI, ACL, EMNLP, WACV · Outstanding Paper Award ACL 2025.">
+  <meta property="og:description" content="PhD student at UIUC developing AI-powered precision livestock systems with genetics, 3D computer vision, and digital phenotyping.">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://hasnat79.github.io">
   <meta property="profile:first_name" content="Hasnat">
@@ -736,6 +736,36 @@
       animation: fadeUp 0.6s 0.15s ease both;
     }
 
+    .project-list {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .project-item {
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--ink-faint);
+      border-radius: 6px;
+      background: var(--warm-white);
+    }
+
+    .project-item h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1rem;
+    }
+
+    .project-item p {
+      margin: 0 0 0.6rem;
+    }
+
+    .project-tags {
+      color: var(--ink-muted);
+      font-size: 0.78rem;
+    }
+
+    .compact-list {
+      padding-left: 1.2rem;
+    }
+
     /* ════════════════════════════════════════════════════════════ */
     /* RESPONSIVE DESIGN                                             */
     /* ════════════════════════════════════════════════════════════ */
@@ -768,6 +798,7 @@
       .sidebar {
         position: static;
       }
+
     }
   </style>
 </head>
@@ -805,7 +836,7 @@
         </p>
         
         <p class="hero-bio" style="font-size:0.88rem; color: var(--ink-muted); margin-bottom: 1.5rem;">
-          12 peer-reviewed publications · AAAI · ACL · EMNLP · WACV · KDD · EACL
+          12 published papers · 2 manuscripts under review · AAAI · ACL · EMNLP · WACV
         </p>
 
         <div class="cta-row">
@@ -939,6 +970,67 @@
               <em>UALBench: The First Comprehensive Unusual Activity Localization Benchmark.</em>
             </div>
           </div>
+        </section>
+
+        <!-- RESEARCH VISION SECTION -->
+        <section class="section" id="research" aria-label="Research vision">
+          <div class="section-header">
+            <h2>Research vision</h2>
+            <div class="section-line"></div>
+          </div>
+          <p>
+            I develop AI-powered precision livestock systems that connect genotype, phenotype, imagery,
+            and producer decisions. My current work combines SNP genotypes with 3D computer vision to
+            measure cattle traits at scale and support more sustainable beef production.
+          </p>
+          <p>
+            My broader research spans digital phenotyping, genomics, multimodal AI, vision-language models,
+            model alignment, and geospatial analysis. I am especially interested in tools that move from
+            reliable scientific measurement to practical value for agricultural producers.
+          </p>
+        </section>
+
+        <!-- RESEARCH PROJECTS SECTION -->
+        <section class="section" id="projects" aria-label="Research projects">
+          <div class="section-header">
+            <h2>Selected projects</h2>
+            <div class="section-line"></div>
+          </div>
+          <div class="project-list">
+            <article class="project-item">
+              <h3>AI for livestock genomics and phenotyping</h3>
+              <p>Integrating SNP data with 3D vision for high-throughput cattle measurement and efficiency-trait discovery.</p>
+              <span class="project-tags">Genomics · 3D vision · Digital phenotyping</span>
+            </article>
+            <article class="project-item">
+              <h3>Agentic framework for genetics and animal science</h3>
+              <p>Designing a research and decision-support framework that connects biological data, scientific workflows, and producer needs.</p>
+              <span class="project-tags">Agents · Bioinformatics · Precision agriculture</span>
+            </article>
+            <article class="project-item">
+              <h3>Multimodal AI and alignment</h3>
+              <p>Developing benchmarks and methods for vision-language alignment, bias evaluation, continual learning, and compact enterprise models.</p>
+              <span class="project-tags">VLMs · LLMs · Alignment · NLP</span>
+            </article>
+          </div>
+        </section>
+
+        <!-- TEACHING AND SERVICE SECTION -->
+        <section class="section" id="teaching" aria-label="Teaching and service">
+          <div class="section-header">
+            <h2>Teaching &amp; service</h2>
+            <div class="section-line"></div>
+          </div>
+          <p>
+            I have taught and supported courses in Artificial Intelligence, Database Systems, Programming
+            Languages, and Algorithm Analysis &amp; Design. My teaching goal is to make technical concepts
+            concrete through projects and applications.
+          </p>
+          <ul class="compact-list">
+            <li>Graduate Teaching Assistant, Texas A&amp;M University: Artificial Intelligence and Database Systems.</li>
+            <li>Contractual Lecturer, BRAC University: Programming Language I and Algorithm Analysis &amp; Design.</li>
+            <li>Reviewer for NLP and multimodal AI venues.</li>
+          </ul>
         </section>
 
         <!-- PUBLICATIONS SECTION -->
